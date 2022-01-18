@@ -1,10 +1,10 @@
 ################################# Default configuration ###################
 # provide your domain here
-baseURL = "https://examplesite.com/"
+baseURL = "https://help.pricewell.io/"
 # theme
-theme = "dot-hugo"
+theme = "pricewell-docs"
 # site title
-title = "Dot"
+title = "PriceWell Help Center"
 # disable language
 disableLanguages = []
 # google analytics
@@ -24,7 +24,7 @@ logo_white = ""
 
 # OpenGraph / Twitter Card metadata
 description = "This is meta description"
-author = "Themefisher"
+author = "PriceWell"
 image = "images/logo.png" # this image will be used as fallback if a page has no image of its own
 
 # customize color
@@ -68,14 +68,14 @@ link = "#"
 languageName = "En"
 languageCode = "en-us"
 weight = 1
-copyright = "Copyright &copy; 2021 a Hugo theme by [Gethugothemes](https://gethugothemes.com/)"
+copyright = "Copyright &copy; 2022 Codefish Apps Ltd"
 
 # banner
 [Languages.en.params.banner]
-title = "Support Center & Knowledge base"
-subtitle = "Find advice and answers from our support team fast or get in touch"
+title = "PriceWell Help Center"
+subtitle = "Explore our guides and examples to integrate PriceWell"
 bg_image = "images/banner.jpg"
-placeholder = "Have a question? Just ask here or enter terms"
+placeholder = "Search for answers"
 
 # call to action
 [Languages.en.params.cta]
