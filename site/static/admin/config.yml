@@ -6,7 +6,7 @@ public_folder: /img
 collections:
     - name: 'faq'
       label: 'FAQ'
-      folder: 'content/faq'
+      folder: 'site/content/faq'
       create: true
       slug: '{{slug}}'
       editor:
@@ -16,9 +16,10 @@ collections:
           - { label: 'Publish Date', name: 'date', widget: 'datetime' }
           - { label: 'Description', name: 'description', widget: 'string' }
           - { label: 'Body', name: 'body', widget: 'markdown' }
+          - { label: 'Keywords', name: 'keywords', widget: 'list' }
     - name: 'features'
       label: 'Features'
-      folder: 'content/features'
+      folder: 'site/content/features'
       create: true
       slug: '{{slug}}'
       editor:
@@ -28,9 +29,10 @@ collections:
           - { label: 'Publish Date', name: 'date', widget: 'datetime' }
           - { label: 'Description', name: 'description', widget: 'string' }
           - { label: 'Body', name: 'body', widget: 'markdown' }
+          - { label: 'Keywords', name: 'keywords', widget: 'list' }
     - name: 'getting-started'
       label: 'Getting Started'
-      folder: 'content/getting-started'
+      folder: 'site/content/getting-started'
       create: true
       slug: '{{slug}}'
       editor:
@@ -40,9 +42,10 @@ collections:
           - { label: 'Publish Date', name: 'date', widget: 'datetime' }
           - { label: 'Description', name: 'description', widget: 'string' }
           - { label: 'Body', name: 'body', widget: 'markdown' }
+          - { label: 'Keywords', name: 'keywords', widget: 'list' }
     - name: 'integrations'
       label: 'Integrations'
-      folder: 'content/integrations'
+      folder: 'site/content/integrations'
       create: true
       slug: '{{slug}}'
       editor:
@@ -52,9 +55,10 @@ collections:
           - { label: 'Publish Date', name: 'date', widget: 'datetime' }
           - { label: 'Description', name: 'description', widget: 'string' }
           - { label: 'Body', name: 'body', widget: 'markdown' }
+          - { label: 'Keywords', name: 'keywords', widget: 'list' }
     - name: 'documentation'
       label: 'Documentation'
-      folder: 'content/documentation'
+      folder: 'site/content/documentation'
       create: true
       slug: '{{slug}}'
       editor:
@@ -64,3 +68,4 @@ collections:
           - { label: 'Publish Date', name: 'date', widget: 'datetime' }
           - { label: 'Description', name: 'description', widget: 'string' }
           - { label: 'Body', name: 'body', widget: 'markdown' }
+          - { label: 'Keywords', name: 'keywords', widget: 'list' }
