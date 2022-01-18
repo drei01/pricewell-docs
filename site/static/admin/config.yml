@@ -1,0 +1,66 @@
+backend:
+    name: git-gateway
+    branch: main # Branch to update (optional; defaults to master)
+media_folder: static/img
+public_folder: /img
+collections:
+    - name: 'faq'
+      label: 'FAQ'
+      folder: 'content/faq'
+      create: true
+      slug: '{{slug}}'
+      editor:
+          preview: false
+      fields:
+          - { label: 'Title', name: 'title', widget: 'string' }
+          - { label: 'Publish Date', name: 'date', widget: 'datetime' }
+          - { label: 'Description', name: 'description', widget: 'string' }
+          - { label: 'Body', name: 'body', widget: 'markdown' }
+    - name: 'features'
+      label: 'Features'
+      folder: 'content/features'
+      create: true
+      slug: '{{slug}}'
+      editor:
+          preview: false
+      fields:
+          - { label: 'Title', name: 'title', widget: 'string' }
+          - { label: 'Publish Date', name: 'date', widget: 'datetime' }
+          - { label: 'Description', name: 'description', widget: 'string' }
+          - { label: 'Body', name: 'body', widget: 'markdown' }
+    - name: 'getting-started'
+      label: 'Getting Started'
+      folder: 'content/getting-started'
+      create: true
+      slug: '{{slug}}'
+      editor:
+          preview: false
+      fields:
+          - { label: 'Title', name: 'title', widget: 'string' }
+          - { label: 'Publish Date', name: 'date', widget: 'datetime' }
+          - { label: 'Description', name: 'description', widget: 'string' }
+          - { label: 'Body', name: 'body', widget: 'markdown' }
+    - name: 'integrations'
+      label: 'Integrations'
+      folder: 'content/integrations'
+      create: true
+      slug: '{{slug}}'
+      editor:
+          preview: false
+      fields:
+          - { label: 'Title', name: 'title', widget: 'string' }
+          - { label: 'Publish Date', name: 'date', widget: 'datetime' }
+          - { label: 'Description', name: 'description', widget: 'string' }
+          - { label: 'Body', name: 'body', widget: 'markdown' }
+    - name: 'documentation'
+      label: 'Documentation'
+      folder: 'content/documentation'
+      create: true
+      slug: '{{slug}}'
+      editor:
+          preview: false
+      fields:
+          - { label: 'Title', name: 'title', widget: 'string' }
+          - { label: 'Publish Date', name: 'date', widget: 'datetime' }
+          - { label: 'Description', name: 'description', widget: 'string' }
+          - { label: 'Body', name: 'body', widget: 'markdown' }
