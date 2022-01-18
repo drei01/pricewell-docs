@@ -42,26 +42,6 @@ font_family = "roboto" # Choose font family from : https://fonts.google.com/
 contact_form_action = "mailto:support@pricewell.io" # contact form works with : https://formspree.io
 
 
-############################## social links ##############################
-[[params.social]]
-icon = "ti-facebook" # themify icon pack : https://themify.me/themify-icons
-name = "Facebook"
-link = "#"
-
-[[params.social]]
-icon = "ti-twitter-alt" # themify icon pack : https://themify.me/themify-icons
-name = "Twitter"
-link = "#"
-  
-[[params.social]]
-icon = "ti-github" # themify icon pack : https://themify.me/themify-icons
-name = "Github"
-link = "#"
-  
-[[params.social]]
-icon = "ti-linkedin" # themify icon pack : https://themify.me/themify-icons
-name = "Linkedin"
-link = "#"
 
 ################################ English Language ######################
 [Languages.en]
