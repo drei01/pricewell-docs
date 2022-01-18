@@ -17,18 +17,18 @@ unsafe = true
 ############################# Default Parameters ##########################
 [params]
 # logo is for all page
-logo = ""
+logo = "images/pricewell-logo.png"
 # logo white is for homepage logo, you can use colorful logo too...
-logo_white = ""
+logo_white = "images/pricewell-logo-white.png"
 # when logo is empty, it will shown your site title
 
 # OpenGraph / Twitter Card metadata
 description = "This is meta description"
 author = "PriceWell"
-image = "images/logo.png" # this image will be used as fallback if a page has no image of its own
+image = "images/pricewell-logo.png" # this image will be used as fallback if a page has no image of its own
 
 # customize color
-primary_color = "#02007e"
+primary_color = "#1d3557"
 body_color = "#f9f9f9"
 text_color = "#636363"
 text_color_dark = "#242738"
@@ -36,10 +36,10 @@ white_color = "#ffffff"
 light_color = "#f8f9fa"
 
 # font family
-font_family = "lato" # Choose font family from : https://fonts.google.com/
+font_family = "roboto" # Choose font family from : https://fonts.google.com/
 
 # contact form action
-contact_form_action = "#" # contact form works with : https://formspree.io
+contact_form_action = "mailto:support@pricewell.io" # contact form works with : https://formspree.io
 
 
 ############################## social links ##############################
@@ -74,7 +74,7 @@ copyright = "Copyright &copy; 2022 Codefish Apps Ltd"
 [Languages.en.params.banner]
 title = "PriceWell Help Center"
 subtitle = "Explore our guides and examples to integrate PriceWell"
-bg_image = "images/banner.jpg"
+bg_image = ""
 placeholder = "Search for answers"
 
 # call to action
