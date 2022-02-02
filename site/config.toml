@@ -67,39 +67,3 @@ content = "Musce libero nunc, dignissim quis turpis quis, semper vehicula dolor.
 enable = true
 label = "contact us"
 link = "contact"
-
-
-################## english navigation #################
-[[Languages.en.menu.main]]
-name = "Home"
-url = "/"
-weight = 1
-
-[[Languages.en.menu.main]]
-name = "contact"
-url = "contact"
-weight = 2
-
-# Dropdown menu
-[[Languages.en.menu.main]]
-weight = 3
-name = "docs"
-hasChildren = true
-
-  [[Languages.en.menu.main]]
-  parent = "docs"
-  name = "Installation"
-  url = "installation"
-  weight = 1
-
-  [[Languages.en.menu.main]]
-  parent = "docs"
-  name = "Billing and Pricing"
-  url = "billing-pricing"
-  weight = 2
-
-  [[Languages.en.menu.main]]
-  parent = "docs"
-  name = "Features"
-  url = "features"
-  weight = 3
