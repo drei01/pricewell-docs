@@ -61,9 +61,9 @@ placeholder = "Search for answers"
 [Languages.en.params.cta]
 enable = true
 title = "Didn't find an answer to your question?"
-content = "Musce libero nunc, dignissim quis turpis quis, semper vehicula dolor. Suspendisse tincidunt consequat quam."
+content = "We are here to help you. No question is too small for our awesome customer support team."
 # call to action button
 [Languages.en.params.cta.button]
 enable = true
 label = "contact us"
-link = "contact"
+link = "mailto:support@pricewell.io"
