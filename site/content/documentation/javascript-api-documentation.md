@@ -13,6 +13,7 @@ keywords:
 
 The PriceWell JavaScript client exposes the following functions to interact with the PriceWell API.
 
+### window.pricewell
 **Kind**: global variable
 
 * [pricewell](#pricewell)
