@@ -30,6 +30,32 @@ collections:
           - { label: 'Description', name: 'description', widget: 'string' }
           - { label: 'Body', name: 'body', widget: 'markdown' }
           - { label: 'Keywords', name: 'keywords', widget: 'list' }
+    - name: 'features_customer_portal'
+      label: 'Features (Customer Portal)'
+      folder: 'site/content/features/customer_portal'
+      create: true
+      slug: '{{slug}}'
+      editor:
+          preview: false
+      fields:
+          - { label: 'Title', name: 'title', widget: 'string' }
+          - { label: 'Publish Date', name: 'date', widget: 'datetime' }
+          - { label: 'Description', name: 'description', widget: 'string' }
+          - { label: 'Body', name: 'body', widget: 'markdown' }
+          - { label: 'Keywords', name: 'keywords', widget: 'list' }
+    - name: 'features_pricing_pages'
+      label: 'Features (Pricing Pages)'
+      folder: 'site/content/features/pricing_pages'
+      create: true
+      slug: '{{slug}}'
+      editor:
+          preview: false
+      fields:
+          - { label: 'Title', name: 'title', widget: 'string' }
+          - { label: 'Publish Date', name: 'date', widget: 'datetime' }
+          - { label: 'Description', name: 'description', widget: 'string' }
+          - { label: 'Body', name: 'body', widget: 'markdown' }
+          - { label: 'Keywords', name: 'keywords', widget: 'list' }
     - name: 'getting-started'
       label: 'Getting Started'
       folder: 'site/content/getting-started'
