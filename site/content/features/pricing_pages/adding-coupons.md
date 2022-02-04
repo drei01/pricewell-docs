@@ -26,3 +26,8 @@ The updated snippet should look like this:\
 If you would like to let your customers enter their own coupons, this can be enabled in PriceWell under "Advanced Settings" -> "Enable coupons"
 
 ![checkbox to allow coupons in stripe checkout](/img/allow-coupons.png)
+
+
+
+**Warning**\
+It's not possible to apply a promotion code AND allow customers to add their own codes during checkout. If you supply a promotion code, customers will not be able to add their own even if you have the option active in PriceWell.
