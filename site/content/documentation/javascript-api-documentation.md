@@ -81,3 +81,19 @@ Returns a list of features for the users current plan
 | config | <code>object</code> | (one of stripeId or email must be present) |
 | config.stripeId | <code>string</code> | The Stripe account id (optional) |
 | config.email | <code>string</code> | The customer email (optional) |
+
+<a name="pricewell.cancelSubscription"></a>
+
+### pricewell.cancelSubscription(config) ⇒ <code>Promise</code>
+Cancels a customers subscription
+
+**Kind**: static method of [<code>pricewell</code>](#pricewell)
+
+| Param | Type | Description |
+| --- | --- | --- |
+| config | <code>object</code> | (one of stripeId or email must be present) |
+| config.companyId | <code>string</code> | Your company id |
+| config.mode | <code>string</code> | Either test or live |
+| config.stripeId | <code>string</code> | The Stripe customer id (optional) |
+| config.email | <code>string</code> | The customer email (optional) |
+| config.subscriptionId | <code>string</code> | The Stripe subscription id (optional) |
