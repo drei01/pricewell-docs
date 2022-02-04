@@ -85,7 +85,8 @@ Returns a list of features for the users current plan
 <a name="pricewell.cancelSubscription"></a>
 
 ### pricewell.cancelSubscription(config) ⇒ <code>Promise</code>
-Cancels a customers subscription
+Cancels a customers subscription. If you don't provide a subscription id
+and the customer only has one active subscription, it will be cancelled.
 
 **Kind**: static method of [<code>pricewell</code>](#pricewell)
 
