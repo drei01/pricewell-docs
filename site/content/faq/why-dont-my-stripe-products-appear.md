@@ -11,8 +11,6 @@ By default, Pricing Pages look for products in Stripe's Test Mode so you can tes
 
 ![link to switch from Stripe Test Mode to Live Mode](/img/switch_to_live_mode.png)
 
-
-
 #### Products using an unsupported pricing type
 
 We are working hard to add support for all of Stripe's pricing types to PriceWell. Below is a list of the pricing types we currently support:
@@ -24,13 +22,9 @@ We are working hard to add support for all of Stripe's pricing types to PriceWel
 
 Any products that do not use a supported pricing type will not appear in PriceWell
 
-
-
 #### Product is not Active
 
 Only active products appear in PriceWell. Make sure your product is not archived or deleted in Stripe.
-
-
 
 #### Using the wrong Stripe account
 
