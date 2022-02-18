@@ -32,6 +32,12 @@
   {{ if .Site.Params.cta.enable }}
   {{ with .Site.Params.cta }}
   {{ "<!-- call to action -->" | safeHTML }}
+  <script>
+    function openChat() {
+      $crisp.push(["do", "chat:open"]); 
+      return false;
+    }
+  </script>
   <section>
     <div class="container">
       <div class="row">
@@ -41,7 +47,7 @@
           <p class="mb-4">{{ .content | markdownify }}</p>
           {{ if .button.enable }}
           {{ with .button }}
-          <a href="{{ .link }}" class="btn btn-primary">{{ .label }}</a>
+          <a href="{{ .link }}" onclick="return openChat()" class="btn btn-primary">{{ .label }}</a>
           {{ end }}
           {{ end }}
           </div>
