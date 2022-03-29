@@ -1,5 +1,5 @@
 ---
-title: “How to set up an AppSumo deal with PriceWell”
+title: How to set up an AppSumo deal with PriceWell
 date: 2022-03-29T16:33:48.456Z
 description: A complete guide on how to launch an AppSumo deal using PriceWell's
   Bulk Coupon Generator
