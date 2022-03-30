@@ -7,15 +7,20 @@ keywords:
   - AppSumo
   - LTDs
   - Coupons
+  - discount
 ---
 <!--StartFragment-->
 
-# What is Appsumo?
+In this article we'll cover:
+- How launch a deal on the AppSumo Marketplace
+- How to create Stripe Coupon Codes in bulk ([quick link](#bulk-stripe-coupons))
+- Uploading discount codes to AppSumo
 
-\
-Appsumo is the leading daily deals website. Essentially is a space for people selling digital products and services to potential buyers with [LifeTime Deals (LTDs)](https://help.appsumo.com/article/34-what-is-a-lifetime-deal). 
+## What is Appsumo?
 
-# How does AppSumo Work?
+Appsumo is the leading daily deals website. Essentially is a space for people selling digital products and services to potential buyers with [LifeTime Deals (LTDs)](https://help.appsumo.com/article/34-what-is-a-lifetime-deal).
+
+## How does AppSumo Work?
 
 Appsumo operates in a pretty straightforward way. Every week they announce new products listed on their platform and they create deals for the potential buyers, while highlighting the desired features of each product.\
 \
@@ -23,9 +28,9 @@ From writing the copy to beta testing the product and preparing a review, they b
 \
 There is also a self-serve version of launching on AppSumo, where people list their product or service under the category they are interested in, while providing Coupon Codes along with LTDs to lure buyers into trying out the product.
 
-# How to create a Deal on AppSumo with PriceWell
+## How to create a Deal on AppSumo with PriceWell
 
-## Start Selling on Appsumo
+### Start Selling on Appsumo
 
 1. In the AppSumo [website](https://sell.appsumo.com/), select the “Start Selling”  Button. 
 
@@ -70,28 +75,43 @@ There is also a self-serve version of launching on AppSumo, where people list th
 
 There has to be a place in the website to collect the codes and automatically create a subscription for the customer with the discount of the code applied.
 
-# PriceWell Coupon Generator
+## Bulk Stripe Coupons
 
-![How Bulk Coupon Generator works](https://lh3.googleusercontent.com/w5dzq532R-CWuOwYoShiUmiZDIzWsysn1n-bXZ94ZAFCJp5OZ2dvFk4poZTE9_kkYN2quwJYV7RWFK8c2RY2Yy0ZSuz7rMhCoyE-fFyQqcct1Jp63itAlca-4i__BYm5XfacbXLt "Bulk Coupon Generator")
+**Note:** You must connect your Stripe account to use this feature. 
+For help, see the [connecting Stripe](/getting-started/connecting-a-stripe-account/) article.
 
-\
-PriceWell’s coupon generator creates the coupons needed for the AppSumo launch in bulk (min. 100 - max. 10,000 purchase-ready codes).\
-\
-When the coupon is used, a Stripe Customer is instantly created with the billing information provided at AppSumo checkout.\
-\
-An AppSumo Seller needs: 
+Launch the "Coupons" feature from the side-menu
+![PriceWell menu showing ](/img/coupons_menu.png)
 
-1. Register with PriceWell and connect the Stripe Account
+Fill in the form making sure to choose the correct mode (Test or Live). Click "Generate".
 
-   ![How to easily create an account to add coupons and manage subscriptions with PriceWell](/img/create-pricewell-acc.png "Create a PriceWell account ")
+![Bulk Stripe Coupon Form](/img/coupons_form.png)
 
-   ![Connect your Stripe account and start receiving payments and generating coupons](/img/connect-stripe-gif.gif "Connect Stripe to a PriceWell account")
-2. Select the Coupon Generator option from the navigation panel
-3. Add the number of coupons you want to generate and the duration of the deal
-4. Download the file and upload it into AppSumo’s Portal
 
-**After uploading the coupon code file, you just need to add the option to the website, where you collect the billing address and the payment info.\*\***\
-PriceWell provides a free solution to create an instant pricing page with the option to receive coupon codes. You can find more about it here:\
+**Number of coupons**: Between 0 and 5000 (if you need more than this you can generate multiple batches)
+
+**Description**: This is only visible to you
+
+**Discount percentage**: 0-100
+
+**Discount length**: (Optional) If you are offering a limited deal such as "1 year for $X" you will want to set a time limit on the discount. After this time, the customer's subscription will become full price. This means they will have to enter their payment details, or if they already exist, they will be charged.
+
+#### Downloading coupons
+
+Once generated, the coupons can be downloaded from the bottom of the page. Downloads are in *.csv* format and include a single column (the code). If you need an alternate format, please reach out to support.
+
+![Stripe Coupon file download button](/img/coupons_download.png)
+
+### AppSumo coupons
+
+PriceWell’s coupon generator creates the coupons needed for the AppSumo launch in bulk (min. 100 - max. 5,000 purchase-ready codes). Download the *.csv* file from PriceWell and upload it to the AppSumo form.
+
+### FAQs
+
+- **[How can I accept 100% discount codes without requiring credit cards](/faq/stripe-checkout-100-discount/)**
+
+Find out more about PriceWell's other features below:
+
 <!--StartFragment-->
 
 **[Create a Pricing Page in minutes](https://help.pricewell.io/getting-started/create-a-pricing-page/)**\
