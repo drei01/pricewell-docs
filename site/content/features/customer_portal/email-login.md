@@ -21,10 +21,9 @@ Under "Advanced Settings" click "Enable Email Login". The preview above will upd
 
 ![](/img/customer-portal-enable-email.png)
 
-### \
 How it works
 
-\
+
 1. Your customer enters their email
 
 ![](https://www.pricewell.io/img/webflow/customer-portal-button.jpg)
@@ -45,7 +44,7 @@ How it works
 
 ### Customizing the email
 
-The email containing the magic link is completely customizable. \
+The email containing the magic link is completely customizable. 
 Under "Advance Settings" -> "Email Login" click "Show Customization Settings"
 
 ![](/img/customer-portal-email-customization.png)
@@ -55,11 +54,11 @@ Under "Advance Settings" -> "Email Login" click "Show Customization Settings"
 #### Customizing the email sender
 
 **Note:** If you don't know what **DNS** is, you will want to send this page to someone technical who can help here.\
-\
+
 In order to customize where the email is sent from (e.g. from your own domain), you will need to enter the full company address details (which are passed on to our email sending partner [SendGrid](https://sendgrid.com/))
 
 ![](/img/customer-portal-verify-sender.png)
 
-Once you have entered all the address details, click "verify" and you will be given new DNS records to add for your domain to verify that you own the domain itself.\
-\
+Once you have entered all the address details, click "verify" and you will be given new DNS records to add for your domain to verify that you own the domain itself.
+
 Once this is done you can choose your email address from the dropdown under "Sender"
