@@ -1,5 +1,5 @@
 ---
-title: Adding Coupons
+title: Adding Coupons at Checkout
 date: 2022-02-04T18:48:00.289Z
 description: Send Coupons directly to Stripe Checkout with PriceWell
 keywords:
