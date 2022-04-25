@@ -1,6 +1,6 @@
 ---
 title: Generating Coupons
-date: 2022-02-03T12:40:50.389Z
+date: 2022-04-25T11:02:05+06:00
 description: Generate Stripe coupons in bulk
 keywords:
   - coupons
