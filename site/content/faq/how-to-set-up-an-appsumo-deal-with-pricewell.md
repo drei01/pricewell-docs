@@ -9,12 +9,11 @@ keywords:
   - Coupons
   - discount
 ---
-<!--StartFragment-->
-
 In this article we'll cover:
-- How launch a deal on the AppSumo Marketplace
-- How to create Stripe Coupon Codes in bulk ([quick link](#bulk-stripe-coupons))
-- Uploading discount codes to AppSumo
+
+* How launch a deal on the AppSumo Marketplace
+* How to create Stripe Coupon Codes in bulk ([quick link](#bulk-stripe-coupons))
+* Uploading discount codes to AppSumo
 
 ## What is Appsumo?
 
@@ -77,30 +76,12 @@ There has to be a place in the website to collect the codes and automatically cr
 
 ## Bulk Stripe Coupons
 
-**Note:** You must connect your Stripe account to use this feature. 
-For help, see the [connecting Stripe](/getting-started/connecting-a-stripe-account/) article.
+PriceWell features a tool to generate Stripe coupon codes in bulk.\
+\
+[Follow the full guide to generating coupons here](https://help.pricewell.io/features/coupons/generating-coupons/)
 
-Launch the "Coupons" feature from the side-menu
+
 ![PriceWell menu showing ](/img/coupons_menu.png)
-
-Fill in the form making sure to choose the correct mode (Test or Live). Click "Generate".
-
-![Bulk Stripe Coupon Form](/img/coupons_form.png)
-
-
-**Number of coupons**: Between 0 and 5000 (if you need more than this you can generate multiple batches)
-
-**Description**: This is only visible to you
-
-**Discount percentage**: 0-100
-
-**Discount length**: (Optional) If you are offering a limited deal such as "1 year for $X" you will want to set a time limit on the discount. After this time, the customer's subscription will become full price. This means they will have to enter their payment details, or if they already exist, they will be charged.
-
-#### Downloading coupons
-
-Once generated, the coupons can be downloaded from the bottom of the page. Downloads are in *.csv* format and include a single column (the code). If you need an alternate format, please reach out to support.
-
-![Stripe Coupon file download button](/img/coupons_download.png)
 
 ### AppSumo coupons
 
@@ -108,7 +89,7 @@ PriceWell’s coupon generator creates the coupons needed for the AppSumo launch
 
 ### FAQs
 
-- **[How can I accept 100% discount codes without requiring credit cards](/faq/stripe-checkout-100-discount/)**
+* **[How can I accept 100% discount codes without requiring credit cards](/faq/stripe-checkout-100-discount/)**
 
 Find out more about PriceWell's other features below:
 
