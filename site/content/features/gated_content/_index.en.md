@@ -8,7 +8,7 @@ keywords:
   - content
   - authentication
 ---
-I﻿f you want to restrict certain pages on your website to only paying customers you are in the right place.
+I﻿f you want to restrict certain pages on your website to only paying Stripe customers, you are in the right place.
 
 ### \
 W﻿hat is Member-only content?
@@ -22,6 +22,14 @@ M﻿ember-only content or "gated content" is a feature that lets you restrict ce
 * S﻿aaS products
 
 A﻿nything you want to restrict can be hidden behind gated content.
+
+
+
+### W﻿hat does it look like?
+
+H﻿ere's a quick demo of what your customer will see.
+
+![A webpage restricted to Stripe customers only using PriceWell](/img/gated-content-demo.gif)
 
 
 
@@ -57,3 +65,27 @@ C﻿onfigure the following:
 **U﻿nauthorized Redirect (optional):** This determines which page we send your customer to if they do not have a paid subscription in your Stripe account. This field is optional. If it is not specified the contents of the page will be hidden and the customer will be shown a modal stating their access is restricted.
 
 ![PriceWell Gated Content configuration screen](/img/gated-content-configure.png)
+
+
+
+
+
+#### A﻿dding it to your Website
+
+A﻿fter you have finished your configuration, hit the "Snippet" button at the bottom (note: if the button doesn't work, check you filled in all the required fields above).
+
+Y﻿ou will be taken to the snippet view where you can copy a small piece of javascript to add to your website.
+
+> T﻿he snippet MUST be added to the <head> section of your HTML or the restrictions won't work
+
+
+
+![javascript snippet](/img/gated-content-snippet.png)
+
+
+
+S﻿imply copy the snippet as shown and add it to the **<head>** tag in your website
+
+#### N﻿eed Help?
+
+P﻿riceWell is for everyone, particularly those who don't code or even know what HTML stands for (Hypertext Markup Language btw). We are very happy to help, no question is a stupid on. Just r[each out to support ](mailto:support@pricewell.io)if you have any questions at all about gated content. We're here to help you.
