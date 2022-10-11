@@ -54,6 +54,6 @@ C﻿onfigure the following:
 * **E﻿xact:** Only this path will match (example: "/my-course" will restrict "/my-course" but not "/my-course/lesson-1")
 * **S﻿tarts With:** This can be used to restrict whole folders (example: "/pages" would restrict "/pages", "/pages/ashley" and "/pages/ashley/home" etc)
 
-
+**U﻿nauthorized Redirect (optional):** This determines which page we send your customer to if they do not have a paid subscription in your Stripe account. This field is optional. If it is not specified the contents of the page will be hidden and the customer will be shown a modal stating their access is restricted.
 
 ![PriceWell Gated Content configuration screen](/img/gated-content-configure.png)
