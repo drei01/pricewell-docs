@@ -47,7 +47,7 @@ T﻿o configure a new piece of gated content head to Create New -> Gated Content
 
 
 
-#### C﻿onfiguring Gated Content
+### C﻿onfiguring Gated Content
 
 C﻿onfigure the following:
 
@@ -69,7 +69,7 @@ C﻿onfigure the following:
 
 
 
-#### A﻿dding it to your Website
+### A﻿dding it to your Website
 
 A﻿fter you have finished your configuration, hit the "Snippet" button at the bottom (note: if the button doesn't work, check you filled in all the required fields above).
 
