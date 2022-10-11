@@ -40,7 +40,7 @@ Y﻿our gated content can always be found in the sidebar:
 
 ![PriceWell sidebar showing "Gated Content"](/img/gated-content-sidebar.png)
 
-\
+
 T﻿o configure a new piece of gated content head to Create New -> Gated Content
 
 ![PriceWell create menu with "Gated Content" selected](/img/gated-content-create.png)
