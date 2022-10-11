@@ -10,8 +10,7 @@ keywords:
 ---
 I﻿f you want to restrict certain pages on your website to only paying Stripe customers, you are in the right place.
 
-### 
-W﻿hat is Member-only content?
+### W﻿hat is Member-only content?
 
 M﻿ember-only content or "gated content" is a feature that lets you restrict certain pages (or whole sections) of your website to paying customers only. This can be used for:
 
