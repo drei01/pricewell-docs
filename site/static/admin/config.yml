@@ -69,6 +69,19 @@ collections:
           - { label: 'Description', name: 'description', widget: 'string' }
           - { label: 'Body', name: 'body', widget: 'markdown' }
           - { label: 'Keywords', name: 'keywords', widget: 'list' }
+    - name: 'features_gated_content'
+      label: 'Features (Gated Content)'
+      folder: 'site/content/features/gated_content'
+      create: true
+      slug: '{{slug}}'
+      editor:
+          preview: false
+      fields:
+          - { label: 'Title', name: 'title', widget: 'string' }
+          - { label: 'Publish Date', name: 'date', widget: 'datetime' }
+          - { label: 'Description', name: 'description', widget: 'string' }
+          - { label: 'Body', name: 'body', widget: 'markdown' }
+          - { label: 'Keywords', name: 'keywords', widget: 'list' }
     - name: 'getting-started'
       label: 'Getting Started'
       folder: 'site/content/getting-started'
