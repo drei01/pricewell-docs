@@ -83,11 +83,11 @@ I﻿f there is no customer for the email they entered, the customer will be redi
 
 S﻿ome website builders (such as Bubble, Wordpress etc) store user accounts. You customer may already be logged in. If this is the case, you can pass the email address to PriceWell so they will be allowed immediate access to Gated Content (if they match the criteria above).
 
-T﻿o do this, you need to change the snippet to add `data-email="CUSTOMER_EMAIL_HERE"` after the first `<script ` (replacing CUSTOMER_EMAIL_HERE with your customers actual email address).
+T﻿o do this, you need to change the snippet to add `data-email="CUSTOMER_EMAIL_HERE"` after the first *<script* (replacing CUSTOMER_EMAIL_HERE with your customers actual email address).
 
 S﻿o the new snippet should looks something like
 
-`﻿<script data-email="CUSTOMER_EMAIL_HERE" src="xxxxx`
+`﻿<script data-email="CUSTOMER_EMAIL_HERE" src="xxxxx` etc
 
 
 #### N﻿eed Help?
