@@ -87,7 +87,7 @@ T﻿o do this, you need to change the snippet to add `data-email="CUSTOMER_EMAIL
 
 S﻿o the new snippet should looks something like
 
-`﻿<script data-email="CUSTOMER_EMAIL_HERE" src="xxxxx` etc
+`﻿<script data-email="CUSTOMER_EMAIL_HERE" src="...`
 
 
 #### N﻿eed Help?
