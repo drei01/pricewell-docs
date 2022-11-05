@@ -92,7 +92,10 @@ Paste the API token into the **Bubble API Token** field. Then enter you Bubble A
 
 If the integration fails to save, double check your API token and app name.
 
-### ✨ Stripe subscription changes will appear in Bubble automatically ✨
+** ✨ Stripe subscription changes will appear in Bubble automatically ✨**
+
+| ⚠️  Changes in your Stripe Test Mode will go to /version-test in Bubble. Live Stripe subscriptions will go to you live Bubble app |
+|-----------------------------------------|
 
 ## How to make the Customer Portal show when the User has a Subscription
 
