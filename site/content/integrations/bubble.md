@@ -80,7 +80,7 @@ E﻿nable the Data API and give  the API access to the User object.
 
 ![b﻿ubble.io enable API access](/img/bubble-enable-data-api.png)
 
-#﻿## Generate an API token
+### Generate an API token
 
 S﻿ettings -> API -> Generate new API token. *Copy the API token*
 
