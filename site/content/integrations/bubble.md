@@ -53,7 +53,6 @@ If you know the customers email address or Stripe Customer Id, you can pass it i
 
 You can also pre-apply coupon codes here by passing in the coupon code as a parameter.
 
-
 ## Sync subscription date from Stripe to Bubble
 
 In your Bubble App go to Data -> Data types -> User
@@ -68,14 +67,22 @@ Create the following new fields on the User data type:
 | Stripe Subscription Price Id   | text |
 | Stripe Subscription Status     | text |
 
-| ⚠️  You must create **all** the fields or the integration won't work   |
-|-----------------------------------------|
+| ⚠️  You must create **all** the fields or the integration won't work |
+| -------------------------------------------------------------------- |
 
 Now go to Data -> Privacy and give "Everyone else" access to the new Stripe fields and the email field. They must also be able to "Find this in searches" and "Modify via API". This is so that the PriceWell plugin can update the user's subscription details for you.
 
 ![Make data visible by the Bubble.io API](/img/bubble-data-privacy.png)
 
-Now go to Settings -> API -> Generate new API token. *Copy the API token*
+Now go to **Settings -> API** 
+
+E﻿nable the Data API and give  the API access to the User object.
+
+![b﻿ubble.io enable API access](/img/bubble-enable-data-api.png
+
+#﻿## Generate and API token
+
+S﻿ettings -> API -> Generate new API token. *Copy the API token*
 
 Go to PriceWell.io, login and click Integrations -> Bubble Integration.
 
@@ -84,7 +91,6 @@ Paste the API token into the **Bubble API Token** field. Then enter you Bubble A
 ![Bubble integration configuration screen in PriceWell](/img/bubble-integration.png)
 
 If the integration fails to save, double check your API token and app name.
-
 
 ### ✨ Stripe subscription changes will appear in Bubble automatically ✨
 
