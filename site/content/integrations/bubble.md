@@ -80,10 +80,10 @@ Now go to Settings -> API
 2. User (this gives us access to the user data fields that you allow in the next step)
 3. Use field display instead of ID for key names
 
+![Make data visible by the Bubble.io API](/img/bubble-enable-data-api.png)
+
 | ⚠️  Be sure to check `Use field display instead of ID for key names`   |
 |-----------------------------------------|
-
-![Make data visible by the Bubble.io API](/img/bubble-enable-data-api.png)
 
 Now go to Settings -> API -> Generate new API token. *Copy the API token*
 
