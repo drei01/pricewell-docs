@@ -61,11 +61,11 @@ Create the following new fields on the User data type:
 
 | Name                           | Type |
 | ------------------------------ | ---- |
-| Stripe Id                      | text |
-| Stripe Subscription Id         | text |
-| Stripe Subscription Period End | date |
-| Stripe Subscription Price Id   | text |
-| Stripe Subscription Status     | text |
+| StripeId                       | text |
+| StripeSubscriptionId           | text |
+| StripeSubscriptionPeriodEnd    | date |
+| StripeSubscriptionPriceId      | text |
+| StripeSubscriptionStatus       | text |
 
 | ⚠️  You must create **all** the fields or the integration won't work |
 | -------------------------------------------------------------------- |
@@ -74,15 +74,18 @@ Now go to Data -> Privacy and give "Everyone else" access to the new Stripe fiel
 
 ![Make data visible by the Bubble.io API](/img/bubble-data-privacy.png)
 
-Now go to **Settings -> API** 
+Now go to Settings -> API
 
-E﻿nable the Data API and give  the API access to the User object.
+1. Enable Data API
+2. User (this gives us access to the user data fields that you allow in the next step)
+3. Use field display instead of ID for key names
 
-![b﻿ubble.io enable API access](/img/bubble-enable-data-api.png)
+| ⚠️  Be sure to check `Use field display instead of ID for key names`   |
+|-----------------------------------------|
 
-### Generate an API token
+![Make data visible by the Bubble.io API](/img/bubble-enable-data-api.png)
 
-S﻿ettings -> API -> Generate new API token. *Copy the API token*
+Now go to Settings -> API -> Generate new API token. *Copy the API token*
 
 Go to PriceWell.io, login and click Integrations -> Bubble Integration.
 
