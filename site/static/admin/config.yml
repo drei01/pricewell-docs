@@ -109,7 +109,7 @@ collections:
           - { label: 'Body', name: 'body', widget: 'markdown' }
           - { label: 'Keywords', name: 'keywords', widget: 'list' }
     - name: 'documentation'
-      label: 'Documentation'
+      label: 'API Documentation'
       folder: 'site/content/documentation'
       create: true
       slug: '{{slug}}'
