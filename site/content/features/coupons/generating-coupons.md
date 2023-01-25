@@ -6,9 +6,11 @@ keywords:
   - coupons
   - bulk
 ---
-## Bulk Stripe Coupons
 
-**Note:** You must connect your Stripe account to use this feature. For help, see the [connecting Stripe](https://help.pricewell.io/getting-started/connecting-a-stripe-account/) article.
+| ⚠️ You must connect your Stripe account to use this feature. For help, see the [Connecting Stripe](https://help.pricewell.io/getting-started/connecting-a-stripe-account/) article. |
+| -------------------------------------------------------------------- |
+
+## Bulk Stripe Coupons
 
 Launch the “Coupons” feature from the side-menu[![PriceWell menu showing ](https://help.pricewell.io/img/coupons_menu.png)](https://help.pricewell.io/img/coupons_menu.png)
 
