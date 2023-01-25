@@ -12,11 +12,11 @@ keywords:
 | ⚠️ You must connect your Stripe account to use this feature. For help, see the [Connecting Stripe](https://help.pricewell.io/getting-started/connecting-a-stripe-account/) article. |
 | -------------------------------------------------------------------- |
 
-## Can I edit a Stripe Invoice?
+### Can I edit a Stripe Invoice?
 
 If a Stripe invoice has already been paid, there's no way to edit it in Stripe. Instead, you can use the PriceWell Invoice Generator to generate a new invoice with the correct details. This is useful when a customer asks you to add their address to an invoice, even if they've already paid.
 
-## Generating an Invoice PDF
+### Generating an Invoice PDF
 
 - Go to the [Invoice Generator](https://app.pricewell.io/invoices/generate) page.
 - Enter the Stripe invoice ID (See "How to find Stripe Invoice Id" below).
@@ -29,7 +29,7 @@ You can re-generate the invoice as many times as you like
 
 ![animation showing how to generate a Stripe invoice pdf with PriceWell](/img/invoice-generator.gif)
 
-### How to find Stripe Invoice Id
+#### How to find Stripe Invoice Id
 
 Finding a Stripe invoice ID is not always easy. Here are the foolproof steps to find it:
 
@@ -38,7 +38,6 @@ Finding a Stripe invoice ID is not always easy. Here are the foolproof steps to 
 - Copy the invoice id from the top-right corner of the page.
 
 ![Location of the invoice id in Stripe](/img/stripe-find-invoice-id.png)
-
 
 #### How to find the Stripe Invoice ID from a Payment
 
