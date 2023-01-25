@@ -1,5 +1,5 @@
 ---
-title: Generating Coupons in Bulk
+title: Generating Stripe Invoice PDFs
 date: 2023-01-24T11:02:05+06:00
 description: Generate Stripe PDF Invoices
 keywords:
@@ -9,9 +9,10 @@ keywords:
   - pdf
 ---
 
-## Edit Stripe Invoices
+| ⚠️ You must connect your Stripe account to use this feature. For help, see the [Connecting Stripe](https://help.pricewell.io/getting-started/connecting-a-stripe-account/) article. |
+| -------------------------------------------------------------------- |
 
-**Note:** You must connect your Stripe account to use this feature. For help, see the [connecting Stripe](https://help.pricewell.io/getting-started/connecting-a-stripe-account/) article.
+## Can I edit a Stripe Invoice?
 
 If a Stripe invoice has already been paid, there's no way to edit it in Stripe. Instead, you can use the PriceWell Invoice Generator to generate a new invoice with the correct details. This is useful when a customer asks you to add their address to an invoice, even if they've already paid.
 
