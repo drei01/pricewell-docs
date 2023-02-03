@@ -14,7 +14,7 @@ We'll go through:
 
 * Installing the PriceWell Bubble Plugin
 * Using the Pricing Page and Customer Portal components 
-* Sync subscription date from Stripe to Bubble
+* Sync subscription data from Stripe to Bubble
 * Displaying the Customer Portal once a user has a subscription.
 
 - - -
@@ -53,7 +53,7 @@ If you know the customers email address or Stripe Customer Id, you can pass it i
 
 You can also pre-apply coupon codes here by passing in the coupon code as a parameter.
 
-## Sync subscription date from Stripe to Bubble
+## Sync subscription data from Stripe to Bubble
 
 In your Bubble App go to Data -> Data types -> User
 
