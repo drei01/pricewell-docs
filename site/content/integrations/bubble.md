@@ -55,7 +55,7 @@ You can also pre-apply coupon codes here by passing in the coupon code as a para
 
 ## Sync subscription data from Stripe to Bubble
 
-#﻿## Enable the Data API
+### Enable the Data API
 
 Go to Settings -> API
 
@@ -63,25 +63,26 @@ Go to Settings -> API
 2. User (this gives us access to the user data fields that you allow in the next step)
 3. Use field display instead of ID for key names
 
-#﻿## Add user fields 
+### Add data fields
 
 In your Bubble App go to Data -> Data types -> User
 
 Create the following new fields on the User data type:
 
-| Name                           | Type |
-| ------------------------------ | ---- |
-| StripeId                       | text |
-| StripeSubscriptionId           | text |
-| StripeSubscriptionPeriodEnd    | date |
-| StripeSubscriptionPriceId      | text |
-| StripeSubscriptionStatus       | text |
+| Name                        | Type |
+| --------------------------- | ---- |
+| StripeId                    | text |
+| StripeSubscriptionId        | text |
+| StripeSubscriptionPeriodEnd | date |
+| StripeSubscriptionPriceId   | text |
+| StripeSubscriptionStatus    | text |
 
 | ⚠️  You must create **all** the fields or the integration won't work |
 | -------------------------------------------------------------------- |
 
 
-#﻿## Syncing Custom Fields (optional)
+
+### Syncing Custom Fields (optional)
 
 T﻿he fields above are required for the integration to work. You can also sync any additional fields you require (e.g. subscription quantity) by clicking "Add Custom Field".
 
@@ -89,8 +90,8 @@ Now go to Data -> Privacy and give "Everyone else" access to the new Stripe fiel
 
 ![Make data visible by the Bubble.io API](/img/bubble-data-privacy.png)
 
-| ⚠️  Be sure to check `Use field display instead of ID for key names`   |
-|-----------------------------------------|
+| ⚠️  Be sure to check `Use field display instead of ID for key names` |
+| -------------------------------------------------------------------- |
 
 Now go to Settings -> API -> Generate new API token. *Copy the API token*
 
@@ -102,10 +103,10 @@ Paste the API token into the **Bubble API Token** field. Then enter you Bubble A
 
 If the integration fails to save, double check your API token and app name.
 
-** ✨ Stripe subscription changes will appear in Bubble automatically ✨**
+ **✨ Stripe subscription changes will appear in Bubble automatically ✨**
 
 | ⚠️  Changes in your Stripe Test Mode will go to /version-test in Bubble. Live Stripe subscriptions will go to you live Bubble app |
-|-----------------------------------------|
+| --------------------------------------------------------------------------------------------------------------------------------- |
 
 ## How to make the Customer Portal show when the User has a Subscription
 
