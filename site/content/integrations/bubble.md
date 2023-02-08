@@ -55,6 +55,16 @@ You can also pre-apply coupon codes here by passing in the coupon code as a para
 
 ## Sync subscription data from Stripe to Bubble
 
+#﻿## Enable the Data API
+
+Go to Settings -> API
+
+1. Enable Data API
+2. User (this gives us access to the user data fields that you allow in the next step)
+3. Use field display instead of ID for key names
+
+#﻿## Add user fields 
+
 In your Bubble App go to Data -> Data types -> User
 
 Create the following new fields on the User data type:
@@ -78,14 +88,6 @@ T﻿he fields above are required for the integration to work. You can also sync 
 Now go to Data -> Privacy and give "Everyone else" access to the new Stripe fields and the email field. They must also be able to "Find this in searches" and "Modify via API". This is so that the PriceWell plugin can update the user's subscription details for you.
 
 ![Make data visible by the Bubble.io API](/img/bubble-data-privacy.png)
-
-Now go to Settings -> API
-
-1. Enable Data API
-2. User (this gives us access to the user data fields that you allow in the next step)
-3. Use field display instead of ID for key names
-
-![Make data visible by the Bubble.io API](/img/bubble-enable-data-api.png)
 
 | ⚠️  Be sure to check `Use field display instead of ID for key names`   |
 |-----------------------------------------|
