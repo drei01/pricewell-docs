@@ -80,8 +80,6 @@ Create the following new fields on the User data type:
 | ⚠️  You must create **all** the fields or the integration won't work |
 | -------------------------------------------------------------------- |
 
-
-
 ### Syncing Custom Fields (optional)
 
 T﻿he fields above are required for the integration to work. You can also sync any additional fields you require (e.g. subscription quantity) by clicking "Add Custom Field".
@@ -122,4 +120,18 @@ Add a **Customer Portal** element to the page and paste the Customer Portal Id i
 
 Add a conditional step so that the Customer Portal is only visible when the Current User's Stripe Subscription Status is "active".
 
-### ✨ The Customer Portal will now show when the user has an active subscription and if not the Pricing Table will show. ✨
+✨ **The Customer Portal will now show when the user has an active subscription and if not the Pricing Table will show.** ✨
+
+
+
+## D﻿isplay Pricing on your Landing Page
+
+Many subscription products display their pricing table on the landing page but require the customer to register an account before subscribing to a plan. To do this, you can use the "**Custom Button Link**" feature of the plugin.\
+\
+A﻿dd a **Pricing Table** component to your landing page and paste the pricing page id as before. This time add a url to the **Custom Button Link** field (e.g. https://yoursite.com/register). This will make **all** the buttons  on the pricing page act as links. Instead of taking the customer to check out, they will be sent to the link you defined.\
+\
+O﻿nce a customer has registered, if you require payment before they can use your app, you can display another pricing table (this time without the custom button link).
+
+
+
+![PriceWell Bubble plugin with a custom link filled in](/img/bubble-plugin-custom-link.png)
