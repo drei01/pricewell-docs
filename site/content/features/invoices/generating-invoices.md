@@ -9,7 +9,7 @@ keywords:
   - pdf
 ---
 
-| ⚠️ You must connect your Stripe account to use this feature. For help, see the [Connecting Stripe](https://help.pricewell.io/getting-started/connecting-a-stripe-account/) article. |
+| ⚠️ You must connect your Stripe account to use this feature. For help, see the [Connecting Stripe](https://help.pricewell.com/getting-started/connecting-a-stripe-account/) article. |
 | -------------------------------------------------------------------- |
 
 ### Can I edit a Stripe Invoice?

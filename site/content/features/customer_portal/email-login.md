@@ -26,17 +26,17 @@ How it works
 
 1. Your customer enters their email
 
-![](https://www.pricewell.io/img/webflow/customer-portal-button.jpg)
+![](https://www.pricewell.com/img/webflow/customer-portal-button.jpg)
 
 \
 \
 2. They receive an email containing a unique link 
 
-![](https://www.pricewell.io/img/webflow/webflow-stripe-login-link.png)
+![](https://www.pricewell.com/img/webflow/webflow-stripe-login-link.png)
 
 3. They are taken to the Customer Portal
 
-![](https://www.pricewell.io/img/stripe-customer-portal.png)
+![](https://www.pricewell.com/img/stripe-customer-portal.png)
 
 
 

@@ -1,7 +1,7 @@
 ################################# Default configuration ###################
 # provide your domain here
-baseURL = "https://help.pricewell.io/"
-baseurl = "https://help.pricewell.io/"
+baseURL = "https://help.pricewell.com/"
+baseurl = "https://help.pricewell.com/"
 # theme
 theme = "pricewell-docs"
 # site title

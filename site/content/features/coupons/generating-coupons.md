@@ -7,16 +7,16 @@ keywords:
   - bulk
 ---
 
-| ⚠️ You must connect your Stripe account to use this feature. For help, see the [Connecting Stripe](https://help.pricewell.io/getting-started/connecting-a-stripe-account/) article. |
+| ⚠️ You must connect your Stripe account to use this feature. For help, see the [Connecting Stripe](https://help.pricewell.com/getting-started/connecting-a-stripe-account/) article. |
 | -------------------------------------------------------------------- |
 
 ## Bulk Stripe Coupons
 
-Launch the “Coupons” feature from the side-menu[![PriceWell menu showing ](https://help.pricewell.io/img/coupons_menu.png)](https://help.pricewell.io/img/coupons_menu.png)
+Launch the “Coupons” feature from the side-menu[![PriceWell menu showing ](https://help.pricewell.com/img/coupons_menu.png)](https://help.pricewell.com/img/coupons_menu.png)
 
 Fill in the form making sure to choose the correct mode (Test or Live). Click “Generate”.
 
-[![Bulk Stripe Coupon Form](https://help.pricewell.io/img/coupons_form.png)](https://help.pricewell.io/img/coupons_form.png)
+[![Bulk Stripe Coupon Form](https://help.pricewell.com/img/coupons_form.png)](https://help.pricewell.com/img/coupons_form.png)
 
 **Number of coupons**: Between 0 and 5000 (if you need more than this you can generate multiple batches)
 
@@ -30,4 +30,4 @@ Fill in the form making sure to choose the correct mode (Test or Live). Click �
 
 Once generated, the coupons can be downloaded from the bottom of the page. Downloads are in *.csv* format and include a single column (the code). If you need an alternate format, please reach out to support.
 
-[![Stripe Coupon file download button](https://help.pricewell.io/img/coupons_download.png)](https://help.pricewell.io/img/coupons_download.png)
+[![Stripe Coupon file download button](https://help.pricewell.com/img/coupons_download.png)](https://help.pricewell.com/img/coupons_download.png)

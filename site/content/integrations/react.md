@@ -67,7 +67,7 @@ export default function App() {
       <h1>PriceWell React Demo</h1>
       <h2>
         Add Stripe subscriptions to your website in minutes at{" "}
-        <a href="https://www.pricewell.io?utm_src=react">pricewell.io</a>
+        <a href="https://www.pricewell.com?utm_src=react">pricewell.io</a>
       </h2>
       <PriceWellPricingPage />
     </div>
