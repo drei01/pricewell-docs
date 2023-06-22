@@ -19,3 +19,4 @@
   from = "https://help.pricewell.io/*"
   to = "https://help.pricewell.com/:splat"
   status = 301
+  force = true
