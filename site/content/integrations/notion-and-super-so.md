@@ -13,7 +13,7 @@ keywords:
 
     
 
-### In the following article we are going through the [Stripe](https://stripe.com/) integration using [Super.so](https://super.so/) , [Notion](https://www.notion.so/) and [Pricewell](https://www.pricewell.io/). \
+### In the following article we are going through the [Stripe](https://stripe.com/) integration using [Super.so](https://super.so/) , [Notion](https://www.notion.so/) and [Pricewell](https://www.pricewell.com/). \
 \
 \
 What is Notion?    

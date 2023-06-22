@@ -22,9 +22,9 @@ PriceWell’s automated generated snippet at the end of every creation process (
 
 In this article, we are covering the process of pasting the snippet into various tools:
 
-* [Webflow](https://help.pricewell.io/integrations/webflow/)
-* [WordPress](https://help.pricewell.io/integrations/wordpress/)
+* [Webflow](https://help.pricewell.com/integrations/webflow/)
+* [WordPress](https://help.pricewell.com/integrations/wordpress/)
 
 
 
-For tutorials on how to embed the code snippet with other tools (Notion, Typedream, React, Vue.js etc) head to [Integrations](https://help.pricewell.io/integrations/)
+For tutorials on how to embed the code snippet with other tools (Notion, Typedream, React, Vue.js etc) head to [Integrations](https://help.pricewell.com/integrations/)

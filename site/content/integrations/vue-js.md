@@ -66,7 +66,7 @@ Example:\
     <h1>PriceWell Vue.js Demo</h1>
     <h2>
       Add Stripe subscriptions to your website in minutes at
-      <a href="https://www.pricewell.io?utm_src=react">pricewell.io</a>
+      <a href="https://www.pricewell.com?utm_src=react">pricewell.io</a>
     </h2>
     <!-- Replace pricingPageId with your Pricing Page id -->
     <PricingPage pricingPageId="314d633d-168a-4c91-9558-5144af807eee" />

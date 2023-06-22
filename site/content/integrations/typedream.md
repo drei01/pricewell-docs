@@ -14,7 +14,7 @@ How to integrate [Stripe ](https://stripe.com/)with [Typedream](https://typed
 
 - - -
 
- In this article we are going to go through the process of integrating Stripe with Typedream using [Pricewell](https://www.pricewell.io/). 
+ In this article we are going to go through the process of integrating Stripe with Typedream using [Pricewell](https://www.pricewell.com/). 
 
 Below follows a short guide of 8 super simple steps: 
 

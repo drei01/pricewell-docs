@@ -78,7 +78,7 @@ There has to be a place in the website to collect the codes and automatically cr
 
 PriceWell features a tool to generate Stripe coupon codes in bulk.\
 \
-[Follow the full guide to generating coupons here](https://help.pricewell.io/features/coupons/generating-coupons/)
+[Follow the full guide to generating coupons here](https://help.pricewell.com/features/coupons/generating-coupons/)
 
 
 ![PriceWell menu showing ](/img/coupons_menu.png)
@@ -95,7 +95,7 @@ Find out more about PriceWell's other features below:
 
 <!--StartFragment-->
 
-**[Create a Pricing Page in minutes](https://help.pricewell.io/getting-started/create-a-pricing-page/)**\
-**[Add Coupon Codes to your Pricing Page](https://help.pricewell.io/features/pricing_pages/adding-coupons/)**
+**[Create a Pricing Page in minutes](https://help.pricewell.com/getting-started/create-a-pricing-page/)**\
+**[Add Coupon Codes to your Pricing Page](https://help.pricewell.com/features/pricing_pages/adding-coupons/)**
 
 <!--EndFragment-->
