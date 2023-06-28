@@ -13,10 +13,9 @@ keywords:
 
     
 
-### In the following article we are going through the [Stripe](https://stripe.com/) integration using [Super.so](https://super.so/) , [Notion](https://www.notion.so/) and [Pricewell](https://www.pricewell.com/). \
-\
-\
-What is Notion?    
+In the following article we are going through the [Stripe](https://stripe.com/) integration using [Super.so](https://super.so/) , [Notion](https://www.notion.so/) and [Pricewell](https://www.pricewell.com/).
+
+### What is Notion?    
 
 Notion is an all-in-one productivity platform that allows teams and individuals to access and use notes, databases, kanban boards, wikis, calendars and reminders. Users can connect those components to create their own systems for knowledge management, note taking, data management, project management and others. \
 \

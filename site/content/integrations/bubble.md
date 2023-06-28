@@ -128,7 +128,7 @@ Add a conditional step so that the Customer Portal is only visible when the Curr
 
 Many subscription products display their pricing table on the landing page but require the customer to register an account before subscribing to a plan. To do this, you can use the "**Custom Button Link**" feature of the plugin.\
 \
-A﻿dd a **Pricing Table** component to your landing page and paste the pricing page id as before. This time add a url to the **Custom Button Link** field (e.g. https://yoursite.com/register). This will make **all** the buttons  on the pricing page act as links. Instead of taking the customer to check out, they will be sent to the link you defined.\
+Add a **Pricing Table** component to your landing page and paste the pricing page id as before. This time add a url to the **Custom Button Link** field (e.g. https://yoursite.com/register). This will make **all** the buttons  on the pricing page act as links. Instead of taking the customer to check out, they will be sent to the link you defined.\
 \
 O﻿nce a customer has registered, if you require payment before they can use your app, you can display another pricing table (this time without the custom button link).
 
