@@ -1,41 +1,45 @@
-{{ "<!-- details page -->" | safeHTML }}
-<section class="single section-sm pb-0">
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-3">
-        <div class="sidebar">
-          <ul>
-            {{ $currentNode := . }}
-            {{ range (where .Site.Pages "Type" "docs") }}
-            {{ if eq $currentNode .}}
-            {{ else }}
-            <li class="sidelist"><a href="{{ .Permalink }}">{{.Title}}</a></li>
-            {{end}}
-            {{ end }}
-          </ul>
-          <a class="back-btn" href="{{ .Site.BaseURL | relLangURL }}" aria-label="back"></a>
-          <ul class="list-styled">
-            {{ $currentNode := . }}
-            {{range .Site.Home.Sections.ByWeight}}
-              {{ if eq .FirstSection $currentNode.FirstSection }}
-              {{ template "section-tree-nav" dict "sect" . "currentnode" $currentNode}}
-              {{ end }}
-            {{ end }}
-            {{ if .Content }}
-              {{ if eq .Params.downloadBtn "true" }}
-                <div>
-                    <button class="btn btn-primary btn-block" id="generatePDF" > Get Pdf  </button>
-                </div>
-              {{ end }}
-            {{ end }}
-          </ul>
-        </div>
-      </div>
-      <div class="col-lg-9">
-        <div class="p-lg-5 p-4 bg-white" id="content">
-          <h2 class="mb-5" id="title">{{ .Title }}</h2>
-          {{ if .Content }}
-          <div class="content">{{.Content}}</div>
+<main class="relative flex justify-center mx-auto max-w-8xl sm:px-2 lg:px-8 xl:px-12">
+  <label for="navigation" class="fixed bottom-0 left-0 z-50 flex items-center justify-center w-12 h-12 mb-4 ml-4 bg-white border rounded-full shadow-lg cursor-pointer text-slate-600 border-slate-300 lg:hidden transition duration-200 ease-in-out active:scale-95">
+    <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M4 8h16M4 16h16" />
+    </svg>
+  </label>
+
+  <input type="checkbox" name="navigation" id="navigation" class="hidden peer" />
+  <div class="fixed top-[3.5rem] h-screen shadow-xl px-4 left-0 hidden peer-checked:block lg:relative lg:top-0 lg:h-auto lg:px-0 lg:block lg:flex-none lg:shadow-none">
+    <div class="absolute inset-y-0 right-0 w-full lg:w-[50vw] bg-white lg:bg-slate-50"></div>
+
+    <nav class="sticky top-[4.5rem] w-64 pr-8 text-base lg:text-sm xl:w-72 xl:pr-16">
+      <ul role="list" class="-ml-0.5 h-[calc(100vh-4.5rem)] overflow-y-auto py-7 pl-0.5 space-y-8">
+        {{ $currentNode := . }}
+        {{range .Site.Home.Sections.ByWeight}}
+        {{ template "section-tree-nav" dict "sect" . "currentnode" $currentNode}}
+        {{ end }}
+      </ul>
+    </nav>
+  </div>
+
+  <div class="flex-auto max-w-2xl min-w-0 px-4 py-10 lg:max-w-none lg:pr-0 lg:pl-8 xl:px-16">
+    <article class="">
+      <header class="">
+        <p class="text-base font-medium text-slate-500">
+          {{ replace .Type "-" " " | title }}
+        </p>
+
+        <h1 class="text-3xl font-bold tracking-tight text-slate-900">
+          {{ .Title }}
+        </h1>
+      </header>
+
+      <p class="mt-2 text-xl text-slate-600">
+        {{.Description}}
+      </p>
+
+        
+      {{ if .Content }}
+          <div class="mt-8 prose prose-slate max-w-none prose-headings:font-semibold prose-headings:tracking-tight prose-lead:text-slate-500 prose-a:font-semibold prose-a:underline prose-pre:bg-slate-900">
+            {{.Content}}
+          </div>
           {{ else }}
           <div class="bg-light p-4">
             <ul class="page-list">
@@ -43,52 +47,69 @@
             </ul>
           </div>
           {{ end }}
-          <p class="post-meta border-bottom pb-3 mb-0 mt-3">Updated on {{ .Lastmod.Format "02 Jan 2006" }}</p>
-          <nav class="pagination mt-3">
-            <!-- Next prev page -->
-            {{ $currentNode := . }}
-            {{ template "menu-nextprev" dict "menu" .Site.Home "currentnode" $currentNode }}
-            {{ define "menu-nextprev" }}
-            {{$currentNode := .currentnode }}
-            {{ if ne .menu.Params.hidden true}}
-            {{if hasPrefix $currentNode.Permalink .menu.Permalink }}
-            {{ $currentNode.Scratch.Set "NextPageOK" "OK" }}
-            {{ $currentNode.Scratch.Set "prevPage" ($currentNode.Scratch.Get "prevPageTmp") }}
-            {{else}}
-            {{if eq ($currentNode.Scratch.Get "NextPageOK") "OK"}}
-            {{ $currentNode.Scratch.Set "NextPageOK" nil }}
-            {{ $currentNode.Scratch.Set "nextPage" .menu }}
-            {{end}}
-            {{end}}
-            {{ $currentNode.Scratch.Set "prevPageTmp" .menu }}
+    </article>
 
-            {{ $currentNode.Scratch.Set "pages" .menu.Pages }}
-            {{ if .menu.IsHome}}
-            {{ $currentNode.Scratch.Set "pages" .menu.Sections }}
-            {{ else if .menu.Sections}}
-            {{ $currentNode.Scratch.Set "pages" (.menu.Pages | union .menu.Sections) }}
-            {{end}}
-            {{ $pages := ($currentNode.Scratch.Get "pages") }}
+    <dl class="flex pt-6 mt-6 border-t border-slate-200">
+       <!-- Next prev page -->
+       {{ $currentNode := . }}
+       {{ template "menu-nextprev" dict "menu" .Site.Home "currentnode" $currentNode }}
+       {{ define "menu-nextprev" }}
+       {{$currentNode := .currentnode }}
+       {{ if ne .menu.Params.hidden true}}
+       {{if hasPrefix $currentNode.Permalink .menu.Permalink }}
+       {{ $currentNode.Scratch.Set "NextPageOK" "OK" }}
+       {{ $currentNode.Scratch.Set "prevPage" ($currentNode.Scratch.Get "prevPageTmp") }}
+       {{else}}
+       {{if eq ($currentNode.Scratch.Get "NextPageOK") "OK"}}
+       {{ $currentNode.Scratch.Set "NextPageOK" nil }}
+       {{ $currentNode.Scratch.Set "nextPage" .menu }}
+       {{end}}
+       {{end}}
+       {{ $currentNode.Scratch.Set "prevPageTmp" .menu }}
 
-            {{ range $pages.ByWeight  }}
-            {{ template "menu-nextprev" dict "menu" . "currentnode" $currentNode }}
-            {{end}}
-            {{ end }}
-            {{ end }}
+       {{ $currentNode.Scratch.Set "pages" .menu.Pages }}
+       {{ if .menu.IsHome}}
+       {{ $currentNode.Scratch.Set "pages" .menu.Sections }}
+       {{ else if .menu.Sections}}
+       {{ $currentNode.Scratch.Set "pages" (.menu.Pages | union .menu.Sections) }}
+       {{end}}
+       {{ $pages := ($currentNode.Scratch.Get "pages") }}
 
-            {{with ($.Scratch.Get "prevPage")}}
-            <a class="nav nav-prev" href="{{.Permalink }}" aria-label="Previous page" ><i class="ti-arrow-left mr-2"></i> <span class="d-none d-md-block">{{.Title}}</span></a>
-            {{end}}
-            {{with ($.Scratch.Get "nextPage")}}
-            <a class="nav nav-next" href="{{.Permalink }}" aria-label="Previous page" > <span class="d-none d-md-block">{{.Title}}</span><i class="ti-arrow-right ml-2"></i></a>
-            {{end}}
-          </nav>
-        </div>
+       {{ range $pages.ByWeight  }}
+       {{ template "menu-nextprev" dict "menu" . "currentnode" $currentNode }}
+       {{end}}
+       {{ end }}
+       {{ end }}
+
+       {{with ($.Scratch.Get "prevPage")}}
+       <div class="mr-auto text-left">
+        <dt class="text-sm font-normal tracking-tight text-slate-600">
+          Previous
+        </dt>
+
+        <dd class="mt-1">
+          <a href="{{.Permalink }}" class="text-base font-semibold text-slate-900 hover:underline">
+            {{.Title}}
+          </a>
+        </dd>
       </div>
-    </div>
+       {{end}}
+       {{with ($.Scratch.Get "nextPage")}}
+       <div class="ml-auto text-right">
+        <dt class="text-sm font-normal tracking-tight text-slate-600">
+          Next
+        </dt>
+
+        <dd class="mt-1">
+          <a href="{{.Permalink }}" class="text-base font-semibold text-slate-900 hover:underline">
+            {{.Title}}
+          </a>
+        </dd>
+      </div>
+       {{end}}
+    </dl>
   </div>
-</section>
-{{ "<!-- /details page -->" | safeHTML }}
+</main>
 
 <!-- templates -->
 {{ define "section-tree-nav" }}
@@ -102,12 +123,12 @@
 {{ with $currentNode.File }}{{ $currentNodeFileUniqueID = .UniqueID }}{{ end }}
 <li data-nav-id="{{.Permalink}}" title="{{.Title}}" class="sidelist
   {{if eq $fileUniqueID $currentNodeFileUniqueID}}active{{end}}">
-  <a href="{{.Permalink}}">
+  {{ $numberOfPages := (add (len .Pages) (len .Sections)) }}
+  <a href="{{.Permalink}}" class="{{if eq $fileUniqueID $currentNodeFileUniqueID}}text-slate-900 hover:text-slate-800{{else if eq $numberOfPages 0}}text-slate-600 hover:text-slate-800{{else}}font-semibold tracking-tight text-slate-900{{end}}">
     {{safeHTML .Params.Pre}}{{or .Params.menuTitle .LinkTitle .Title}}{{safeHTML .Params.Post}}
   </a>
-  {{ $numberOfPages := (add (len .Pages) (len .Sections)) }}
   {{ if ne $numberOfPages 0 }}
-    <ul>
+    <ul role="list" class="pl-3 mt-3 space-y-2">
       {{ range .Pages.ByWeight }}
         {{ if and .Params.hidden (not $.showhidden) }}
         {{else}}
