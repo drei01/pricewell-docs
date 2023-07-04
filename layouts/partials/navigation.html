@@ -1,71 +1,21 @@
-<nav class="navbar navbar-expand-md {{ if .IsHome }}navbar-dark{{ else }}navbar-light{{ end }}">
-  <div class="container px-2 px-md-0">
-    <a class="navbar-brand px-2" href="{{ site.BaseURL | relLangURL }}">
-      {{ $logo:= site.Params.logo }}
-      {{ $logoWhite:= site.Params.logo_white }}
-      {{ if (or $logo $logoWhite) }}
-      {{ if .IsHome }}
-      <img class="img-fluid" src="{{if $logoWhite }}{{ $logoWhite | absURL }} {{ else }} {{ $logo | absURL }}{{ end }}"
-        alt="{{ site.Title }}">
-      {{ else }}
-      <img class="img-fluid" src="{{ $logo | absURL }}" alt="{{ site.Title }}">
-      {{ end }}
-      {{ else }}
-      {{ site.Title }}
-      {{ end }}
+<header class="sticky top-0 z-50 flex flex-col sm:flex-row items-center justify-between px-3 py-2 border-b shadow-lg bg-white/90 backdrop-blur-sm border-slate-400/40">
+  <div class="flex items-center flex-grow basis-0">
+    <a href="/" class="text-lg font-semibold tracking-tight text-slate-900">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 415.304 72.982" class="w-auto h-5 inline" >
+        <path d="M63.338 6.323a.999.999 0 0 0-1.414 0l-3.707 3.707H34.934L5.664 39.541a3.507 3.507 0 0 0-1.033 2.495c0 .942.367 1.829 1.033 2.495L26.13 64.997a3.51 3.51 0 0 0 2.491 1.031 3.54 3.54 0 0 0 2.509-1.041l28.501-29.271V11.444l3.707-3.707a.999.999 0 0 0 0-1.414Zm-5.707 28.581L29.706 63.583a1.53 1.53 0 0 1-2.162 0L7.078 43.117a1.532 1.532 0 0 1 .003-2.165L35.768 12.03h20.449l-4.833 4.833a4.969 4.969 0 0 0-2.753-.833c-2.757 0-5 2.243-5 5s2.243 5 5 5 5-2.243 5-5a4.969 4.969 0 0 0-.833-2.753l4.833-4.833v21.46Zm-6-13.874c0 1.654-1.346 3-3 3s-3-1.346-3-3 1.346-3 3-3c.462 0 .894.114 1.285.301l-1.992 1.992a.999.999 0 1 0 1.414 1.414l1.992-1.992c.188.391.301.823.301 1.285Z"/>
+        <path fill-rule="evenodd" stroke="#000" stroke-linecap="round" stroke-width=".25mm" d="m296.867 19.798-5.395 26.536-5.914-26.536h-9.323l-5.82 26.394-5.425-26.394h-12.517l10.998 35.818h12.461l4.98-22.505 4.813 22.505h12.472l10.854-35.818h-12.184ZM96.643 18.211l-10.94 1.775a14.604 14.604 0 0 1 .96 2.7c.409 1.618.64 3.52.654 5.776a35.264 35.264 0 0 1 0 .22v41.133H98.64v-13.54a19.199 19.199 0 0 0 2.244.375c1.039.114 2.19.169 3.5.169 11.567 0 19.285-7.738 19.285-19.395a28.89 28.89 0 0 0-.874-7.371c-1.83-6.922-6.461-10.935-13.186-11.449a19.754 19.754 0 0 0-1.504-.056 16.309 16.309 0 0 0-3.62.388 13.287 13.287 0 0 0-3.796 1.487 13.183 13.183 0 0 0-2.567 1.967 16.523 16.523 0 0 0-.564-2.115 12.48 12.48 0 0 0-.915-2.064Zm152.572 34.336-3.767-7.782a21.142 21.142 0 0 1-4.572 2.16c-1.557.5-3.299.81-5.306.81-5.236 0-8.343-2.409-9.063-7.378h23.23a34.896 34.896 0 0 0 .344-5.293c0-8.824-5.227-14.906-13.24-16.24a20.898 20.898 0 0 0-3.433-.276c-10.608 0-18.449 8.012-18.449 19.34a20.952 20.952 0 0 0 1.626 8.391c2.957 6.818 9.666 10.54 17.768 10.54a32.59 32.59 0 0 0 4.776-.335c3.549-.526 6.28-1.613 8.426-2.864a21.575 21.575 0 0 0 1.66-1.073Zm96.654 0-3.767-7.782a21.142 21.142 0 0 1-4.573 2.16c-1.557.5-3.298.81-5.306.81-5.235 0-8.342-2.409-9.063-7.378h23.23a34.896 34.896 0 0 0 .344-5.293c0-8.824-5.226-14.906-13.239-16.24a20.898 20.898 0 0 0-3.434-.276c-10.607 0-18.448 8.012-18.448 19.34a20.952 20.952 0 0 0 1.625 8.391c2.958 6.818 9.667 10.54 17.769 10.54a32.59 32.59 0 0 0 4.775-.335c3.55-.526 6.28-1.613 8.426-2.864a21.575 21.575 0 0 0 1.66-1.073Zm-133.687.157-4.362-8.087a10.015 10.015 0 0 1-2.957 1.885 10.962 10.962 0 0 1-4.223.867 10.03 10.03 0 0 1-3.679-.642c-2.976-1.165-4.638-3.81-5.13-7.04a14.204 14.204 0 0 1-.157-2.137c0-4.622 2.353-8.277 6.707-9.228a10.984 10.984 0 0 1 2.348-.242c2.886 0 5.361.731 7.59 2.152l2.337-9.018c-2.55-1.516-6.492-2.666-10.87-2.666-11.152 0-19.476 7.29-19.476 19.16a22.671 22.671 0 0 0 1.45 8.34c2.737 6.946 9.208 10.771 18.24 10.771a20.672 20.672 0 0 0 4.704-.531c3.146-.734 5.647-2.13 7.457-3.567a17.323 17.323 0 0 0 .02-.017ZM364.554 5.6h-11.45v38.283a21.341 21.341 0 0 0 .396 4.316c1.242 6.001 5.257 7.798 9.978 8.176a28.587 28.587 0 0 0 2.275.083 20.67 20.67 0 0 0 1.466-.053c.998-.071 2.021-.217 2.92-.455a7.963 7.963 0 0 0 1.233-.426v-9.14a4.172 4.172 0 0 1-.551.203c-.705.21-1.618.334-2.412.35a8.428 8.428 0 0 1-.159.001c-2.393 0-3.696-1.048-3.696-4.21V5.599Zm23.1 0h-11.451v38.283a21.341 21.341 0 0 0 .397 4.316c1.242 6.001 5.256 7.798 9.978 8.176a28.587 28.587 0 0 0 2.274.083 20.67 20.67 0 0 0 1.467-.053c.997-.071 2.021-.217 2.92-.455a7.963 7.963 0 0 0 1.232-.426v-9.14a4.172 4.172 0 0 1-.55.203c-.705.21-1.618.334-2.412.35a8.428 8.428 0 0 1-.16.001c-2.392 0-3.696-1.048-3.696-4.21V5.599Zm-247.83 12.612-10.962 1.775a14.604 14.604 0 0 1 .96 2.7c.409 1.618.64 3.52.654 5.776a35.264 35.264 0 0 1 0 .22v26.934h11.344V35.195a8.713 8.713 0 0 1 3.409-4.387c1.307-.862 2.915-1.402 4.77-1.402 1.66 0 2.878.332 3.828.78l2.341-11.032c-.946-.313-2.164-.501-3.381-.574a19.324 19.324 0 0 0-1.147-.034 11.978 11.978 0 0 0-9.194 4.544 17.517 17.517 0 0 0-.863 1.092 21.555 21.555 0 0 0-.442-2.515c-.316-1.305-.75-2.443-1.318-3.456Zm33.92 1.587h-15.386v9.918h4.042v25.9h11.343V19.798ZM98.64 46.3V32.766c.785-1.856 2.473-4.388 6.31-4.597a9.492 9.492 0 0 1 .516-.013 7.624 7.624 0 0 1 2.83.484c2.924 1.16 4.011 4.332 4.011 8.71a12.284 12.284 0 0 1-.808 4.526 8.057 8.057 0 0 1-7.707 5.354 18.771 18.771 0 0 1-1.857-.085 11.799 11.799 0 0 1-1.876-.331 8.625 8.625 0 0 1-1.42-.514Zm75.813-38.178a6.814 6.814 0 0 0-6.82-6.759c-3.746 0-6.81 3.053-6.81 6.76 0 3.763 3.088 6.81 6.81 6.81 3.755 0 6.82-3.047 6.82-6.81ZM239.446 34H226.49a9.999 9.999 0 0 1 1.051-3.429c1.018-1.886 2.693-3.114 5.027-3.36a8.48 8.48 0 0 1 .891-.046 6.514 6.514 0 0 1 2.399.42c2.105.827 3.17 2.777 3.485 4.957a10.218 10.218 0 0 1 .102 1.458Zm96.653 0h-12.955a9.999 9.999 0 0 1 1.052-3.429c1.018-1.886 2.693-3.114 5.027-3.36a8.48 8.48 0 0 1 .89-.046 6.514 6.514 0 0 1 2.4.42c2.105.827 3.17 2.777 3.484 4.957A10.218 10.218 0 0 1 336.1 34Z" font-size="12" vector-effect="non-scaling-stroke"/>
+      </svg>
+      help docs
     </a>
-    <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navigation"
-      aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-
-    <div class="collapse navbar-collapse text-center" id="navigation">
-      <ul class="navbar-nav ml-auto">
-        {{ range site.Menus.main }}
-        {{ if .HasChildren }}
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle text-dark" href="#" role="button" data-toggle="dropdown"
-            aria-haspopup="true" aria-expanded="false">
-            {{ .Name }}
-          </a>
-          <div class="dropdown-menu">
-            {{ range .Children }}
-            <a class="dropdown-item" href="{{ .URL | absLangURL }}">{{ .Name }}</a>
-            {{ end }}
-          </div>
-        </li>
-        {{ else }}
-        <li class="nav-item">
-          <a class="nav-link text-dark" href="{{ .URL | absLangURL }}">{{ .Name }}</a>
-        </li>
-        {{ end }}
-        {{ end }}
-      </ul>
-      <div class="flex space-x-2">
-        <a href="https://app.pricewell.io/register" class="btn">Get Started Free</a>
-      </div>
-      <!-- Language List -->
-      {{- if site.IsMultiLingual }}
-      <select class="lang-list {{ if not .IsHome }}dark mb-3 mb-md-0{{ end }}" id="select-language"
-        onchange="location = this.value;">
-        {{ $siteLanguages := site.Languages}}
-        {{ $pageLang := .Page.Lang}}
-        {{ range .Page.AllTranslations }}
-        {{ $translation := .}}
-        {{ range $siteLanguages }}
-        {{ if eq $translation.Lang .Lang }}
-        {{ $selected := false }}
-        {{ if eq $pageLang .Lang}}
-        <option id="{{ $translation.Language }}" value="{{ $translation.Permalink }}" selected>{{ .LanguageName }}
-        </option>
-        {{ else }}
-        <option id="{{ $translation.Language }}" value="{{ $translation.Permalink }}">{{ .LanguageName }}</option>
-        {{ end }}
-        {{ end }}
-        {{ end }}
-        {{ end }}
-      </select>
-      {{ end }}
-    </div>
   </div>
-</nav>
+
+  {{ if ne .Page.RelPermalink "/" }}
+  <div id="autocomplete" class="md:w-80 lg:w-96"></div>
+  {{ end }}
+
+  <div class="items-center justify-end flex-grow hidden basis-0 md:flex">
+    <a href="https://app.pricewell.io/register" class="px-4 py-2 text-sm font-semibold rounded bg-blue-900 text-slate-50 transition ease-in-out delay-75 hover:scale-105 duration-200">
+      Get Started Free
+    </a>
+  </div>
+</header>

@@ -13,21 +13,25 @@ You can send coupons directly to the Checkout using PriceWell. This means your c
 \
 **Applying a Coupon**
 
-Your Pricing Page snippet will look something like the following\
-`<div id="pricewell-a506c336-a866-430b-99b3-347fba5b78f4"></div><script src="http://localhost:3200/a506c336-a866-430b-99b3-347fba5b78f4/pricewell.js" async=""></script>`
+Your Pricing Page snippet will look something like the following
 
-You simply need to add an attribute `data-coupon="COUPON_ID"` to the div element and replace COUPON_Id with your[ coupon id from Stripe](https://dashboard.stripe.com/coupons). **Note:** The coupon must be created in the same Stripe environment (test or live) as your Pricing Page.\
-\
-The updated snippet should look like this:\
-`<div id="pricewell-a506c336-a866-430b-99b3-347fba5b78f4" data-coupon="COUPON_ID"></div><script src="http://localhost:3200/a506c336-a866-430b-99b3-347fba5b78f4/pricewell.js" async=""></script>`\
-``\
+```javascript
+<div id="pricewell-a506c336-a866-430b-99b3-347fba5b78f4"></div><script src="http://localhost:3200/a506c336-a866-430b-99b3-347fba5b78f4/pricewell.js" async=""></script>
+```
+
+You simply need to add an attribute `data-coupon="COUPON_ID"` to the div element and replace COUPON_Id with your[coupon id from Stripe](https://dashboard.stripe.com/coupons). **Note:** The coupon must be created in the same Stripe environment (test or live) as your Pricing Page.\
+
+The updated snippet should look like this:
+
+```javascript
+<div id="pricewell-a506c336-a866-430b-99b3-347fba5b78f4" data-coupon="COUPON_ID"></div><script src="http://localhost:3200/a506c336-a866-430b-99b3-347fba5b78f4/pricewell.js" async=""></script>
+```
+
 **Allowing customers to enter coupons**\
-\
+
 If you would like to let your customers enter their own coupons, this can be enabled in PriceWell under "Advanced Settings" -> "Enable coupons"
 
 ![checkbox to allow coupons in stripe checkout](/img/allow-coupons.png)
-
-
 
 **Warning**\
 It's not possible to apply a promotion code AND allow customers to add their own codes during checkout. If you supply a promotion code, customers will not be able to add their own even if you have the option active in PriceWell.
