@@ -8,7 +8,7 @@
   {{ $css := resources.Get "css/main.css" | postCSS }}
   <link href="{{ $css.Permalink }}" rel="stylesheet" media="screen"/>
   <link rel="stylesheet" href="{{ `plugins/themify-icons/themify-icons.css` | absURL }}"/>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@algolia/autocomplete-theme-classic"/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3" />
 
 
   {{ template "_internal/google_analytics.html" . }}
@@ -18,7 +18,7 @@
   {{ else }}
   {{ end }}
 
-  <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+  <script src="https://identity.netlify.com/v1/netlify-identity-widget.js" async="async"></script>
   <script type="text/javascript">window.$crisp=[];window.CRISP_WEBSITE_ID="f1ac3aae-db19-49bb-bca9-c631bc66294b";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();</script>
   <script defer data-domain="help.pricewell.com" src="/js/t-script.js"></script>
 

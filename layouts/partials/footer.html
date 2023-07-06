@@ -16,73 +16,16 @@
       </a>
     </span>
   </div>
-  <script src="https://cdn.jsdelivr.net/npm/algoliasearch"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@algolia/autocomplete-js"></script>
-<script>
-  const { autocomplete, getAlgoliaResults } = window['@algolia/autocomplete-js'];
-
-const searchClient = algoliasearch(
-  '19UQLY9O07',
-  'c10c22e6ce1b124cf632450c98f80fa3'
-);
-
-autocomplete({
-  container: '#autocomplete',
-  placeholder: 'Search for answers...',
-  insights: true,
-  getSources({ query }) {
-    return [
-      {
-        sourceId: 'products',
-        getItems() {
-          return getAlgoliaResults({
-            searchClient,
-            queries: [
-              {
-                indexName: 'pricewell-docs',
-                query,
-                params: {
-                  hitsPerPage: 5,
-                  attributesToSnippet: ['name:10', 'description:35'],
-                  snippetEllipsisText: '…',
-                },
-              },
-            ],
-          });
-        },
-        getItemUrl({ item }) {
-          return `${window.location.origin}/${item.objectID}`;
-        },
-        onSelect({ item }) {
-          window.location = `${window.location.origin}/${item.objectID}`;
-        },
-        templates: {
-          item({ item, components, html }) {
-            return html`<div class="aa-ItemWrapper">
-              <div class="aa-ItemContent">
-                <div class="aa-ItemContentBody">
-                  <div class="aa-ItemContentTitle">
-                    ${components.Highlight({
-                      hit: item,
-                      attribute: 'name',
-                    })}
-                  </div>
-                  <div class="aa-ItemContentDescription">
-                    ${components.Snippet({
-                      hit: item,
-                      attribute: 'description',
-                    })}
-                  </div>
-                </div>
-              </div>
-            </div>`;
-          },
-        },
-      },
-    ];
-  },
-});
-
-</script>
+  <script src="https://cdn.jsdelivr.net/npm/@docsearch/js@3"></script>
+  <script type="text/javascript">
+    docsearch({
+      appId: '08195P4OEA',
+      apiKey: '0a34292e2a30431292cc67fdac78fb81',
+      indexName: 'help-pricewell',
+      container: '#autocomplete',
+      placeholder: 'Search...',
+      translations: {button:{buttonText: 'Search for answers...'}}
+    });
+  </script>
 
 </footer>
