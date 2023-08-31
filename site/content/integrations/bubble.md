@@ -75,7 +75,7 @@ Create the following new fields on the User data type:
 | StripeSubscriptionId        | text |
 | StripeSubscriptionPeriodEnd | date |
 | StripeSubscriptionPriceId   | text |
-| [StripeSubscriptionStatus(https://stripe.com/docs/api/subscriptions/object#subscription_object-status)   | text |
+| [StripeSubscriptionStatus](https://stripe.com/docs/api/subscriptions/object#subscription_object-status)   | text |
 
 | ⚠️  You must create **all** the fields or the integration won't work |
 | -------------------------------------------------------------------- |
