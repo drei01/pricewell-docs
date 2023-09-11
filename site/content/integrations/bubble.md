@@ -84,6 +84,8 @@ Create the following new fields on the User data type:
 
 T﻿he fields above are required for the integration to work. You can also sync any additional fields you require (e.g. subscription quantity) by clicking "Add Custom Field".
 
+### Allow Access via API
+
 Now go to Data -> Privacy and give "Everyone else" access to the new Stripe fields and the email field. They must also be able to "Find this in searches" and "Modify via API". This is so that the PriceWell plugin can update the user's subscription details for you.
 
 ![Make data visible by the Bubble.io API](/img/bubble-data-privacy.png)
