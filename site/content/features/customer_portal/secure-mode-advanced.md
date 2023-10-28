@@ -5,6 +5,7 @@ description: Secure your Stripe Customer Portal
 keywords:
   - security
   - portal
+  - bubble
 ---
 During development you can use your customer's email address or Stripe id with the customer portal. When you are ready to take it live you must switch to secure mode (or anyone could check whether an email address is one of your customers). Secure mode can be configured in either the "Configuration" or "Snippet" section of the Customer Portal edit screen (as shown below).
 
@@ -17,5 +18,8 @@ Once enabled, you must encrypt your customer's email address or Stripe id before
 #### Encrypting customer data with Bubble.io
 
 I﻿f you are using the PriceWell plugin for Bubble, you can use the "PriceWell Encrypt Data" action to encrypt your customer's email or stripe id before displaying the Customer Portal. Follow this tutorial for a step by step guide.
+
+| ⚠️  You must **uncheck** "visible on load" for the customer portal when enabling secure mode |
+| -------------------------------------------------------------------- |
 
 [![](https://cdn.loom.com/sessions/thumbnails/47418d88ecd04ca08db873f1257d20c8-with-play.gif)](https://www.loom.com/share/47418d88ecd04ca08db873f1257d20c8)
