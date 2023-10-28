@@ -29,9 +29,9 @@ Go to the [PriceWell Bubble Plugin](https://bubble.io/plugin/pricewell-164327942
 
 See detailed instructions below:
 
-[How to create a Pricing Page](https://pricewell.freshdesk.com/a/solutions/articles/80000600056)
+[How to create a Pricing Page](/getting-started/create-a-pricing-page/)
 
-[How to create a Customer Portal](https://pricewell.freshdesk.com/a/solutions/articles/80000658397)
+[How to create a Customer Portal](/getting-started/create-a-customer-portal/)
 
 ## Step 2: Embed the Pricing Page in Bubble
 
@@ -123,6 +123,8 @@ Add a **Customer Portal** element to the page and paste the Customer Portal Id i
 Add a conditional step so that the Customer Portal is only visible when the Current User's Stripe Subscription Status is "active".
 
 ✨ **The Customer Portal will now show when the user has an active subscription and if not the Pricing Table will show.** ✨
+
+(﻿Optional) [Enabling Secure Mode](/features/customer_portal/secure-mode-advanced/)
 
 
 
