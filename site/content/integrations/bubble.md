@@ -19,6 +19,10 @@ We'll go through:
 
 - - -
 
+If you want to sync checkout purchase history instead of subscription data, see our guide: [Sync Checkout Purchase History](/integrations/bubble-checkout/).
+
+- - -
+
 ## Install the PriceWell Bubble Plugin
 
 Go to the [PriceWell Bubble Plugin](https://bubble.io/plugin/pricewell-1643279429035x716037702183813100) page and click "Install Plugin"
