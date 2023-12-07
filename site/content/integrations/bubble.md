@@ -111,7 +111,7 @@ If the integration fails to save, double check your API token and app name.
 
 **✨ Stripe subscription changes will appear in Bubble automatically ✨**
 
-| -------------------------------------------------------------------- |
+ ---
 
 | ⚠️ S﻿ecurity warning: The email addresses in your Data type can be leaked if an attacker gets hold of the data type name. To mitigate this, use the "Match on encrypted Email" option and encrypt your email addresses using the "Encrypt PriceWell data" action from our plugin. |
 | -------------------------------------------------------------------- |
