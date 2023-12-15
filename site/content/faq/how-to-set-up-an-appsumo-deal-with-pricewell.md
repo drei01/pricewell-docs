@@ -95,7 +95,7 @@ Find out more about PriceWell's other features below:
 
 <!--StartFragment-->
 
-**[Create a Pricing Page in minutes](https://help.pricewell.com/getting-started/create-a-pricing-page/)**\
-**[Add Coupon Codes to your Pricing Page](https://help.pricewell.com/features/pricing_pages/adding-coupons/)**
+**[Create a Pricing Page in minutes](/getting-started/create-a-pricing-page/)**\
+**[Add Coupon Codes to your Pricing Page](/features/pricing_page/adding-coupons/)**
 
 <!--EndFragment-->

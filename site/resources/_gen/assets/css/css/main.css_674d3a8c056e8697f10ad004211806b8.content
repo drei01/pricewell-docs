@@ -1045,9 +1045,6 @@ video {
 .mr-auto {
   margin-right: auto;
 }
-.mt-0 {
-  margin-top: 0px;
-}
 .mt-1 {
   margin-top: 0.25rem;
 }
@@ -1492,10 +1489,6 @@ video {
 .py-4 {
   padding-top: 1rem;
   padding-bottom: 1rem;
-}
-.py-5 {
-  padding-top: 1.25rem;
-  padding-bottom: 1.25rem;
 }
 .py-7 {
   padding-top: 1.75rem;
