@@ -79,7 +79,7 @@ Create the following new fields on the User data type:
 | StripeSubscriptionId        | text |
 | StripeSubscriptionPeriodEnd | date |
 | StripeSubscriptionPriceId   | text |
-| StripeSubscriptionStatus  | text |
+| StripeSubscriptionStatus    | text |
 
 [L﻿ist of subscription statuses](https://stripe.com/docs/api/subscriptions/object#subscription_object-status)
 
@@ -92,9 +92,9 @@ T﻿he fields above are required for the integration to work. You can also sync 
 
 ### Allow Access via API
 
-Now go to Data -> Privacy and give "Everyone else" access to the new Stripe fields and the email field. They must also be able to "Find this in searches" and "Modify via API". This is so that the PriceWell plugin can update the user's subscription details for you.
+Now go to Data -> Privacy. Select the User type. There should be a privacy rule for "Everyone else". Select "Modify via API". **Make sure all other checkboxes are unchecked so as not to expose sensitive data.**
 
-![Make data visible by the Bubble.io API](/img/bubble-data-privacy.png)
+![Make data visible by the Bubble.io API](/img/bubble-privacy-rules-2.png)
 
 | ⚠️  Be sure to check `Use field display instead of ID for key names` |
 | -------------------------------------------------------------------- |
@@ -111,10 +111,7 @@ If the integration fails to save, double check your API token and app name.
 
 **✨ Stripe subscription changes will appear in Bubble automatically ✨**
 
- ---
-
-| ⚠️ S﻿ecurity warning: The email addresses in your Data type can be leaked if an attacker gets hold of the data type name. To mitigate this, use the "Match on encrypted Email" option and encrypt your email addresses using the "Hashing sha256" plugin or similar.
-| -------------------------------------------------------------------- |
+- - -
 
 | ⚠️  Changes in your Stripe Test Mode will go to /version-test in Bubble. Live Stripe subscriptions will go to you live Bubble app |
 | --------------------------------------------------------------------------------------------------------------------------------- |
@@ -137,8 +134,6 @@ Add a conditional step so that the Customer Portal is only visible when the Curr
 
 (﻿Optional) [Enabling Secure Mode](/features/customer_portal/secure-mode-advanced/)
 
-
-
 ## D﻿isplay Pricing on your Landing Page
 
 Many subscription products display their pricing table on the landing page but require the customer to register an account before subscribing to a plan. To do this, you can use the "**Custom Button Link**" feature of the plugin.\
@@ -146,7 +141,5 @@ Many subscription products display their pricing table on the landing page but r
 Add a **Pricing Table** component to your landing page and paste the pricing page id as before. This time add a url to the **Custom Button Link** field (e.g. https://yoursite.com/register). This will make **all** the buttons  on the pricing page act as links. Instead of taking the customer to check out, they will be sent to the link you defined.\
 \
 O﻿nce a customer has registered, if you require payment before they can use your app, you can display another pricing table (this time without the custom button link).
-
-
 
 ![PriceWell Bubble plugin with a custom link filled in](/img/bubble-plugin-custom-link.png)
