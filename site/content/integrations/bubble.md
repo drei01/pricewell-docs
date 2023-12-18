@@ -81,7 +81,7 @@ Create the following new fields on the User data type:
 | StripeSubscriptionPriceId   | text |
 | StripeSubscriptionStatus    | text |
 
-[L﻿ist of subscription statuses](https://stripe.com/docs/api/subscriptions/object#subscription_object-status)
+[﻿View a list of subscription statuses](https://stripe.com/docs/api/subscriptions/object#subscription_object-status)
 
 | ⚠️  You must create **all** the fields or the integration won't work |
 | -------------------------------------------------------------------- |
