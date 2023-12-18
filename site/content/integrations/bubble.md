@@ -64,7 +64,7 @@ You can also pre-apply coupon codes here by passing in the coupon code as a para
 Go to Settings -> API
 
 1. Enable Data API
-2. User (this gives us access to the user data fields that you allow in the next step)
+2. Check "User" (this gives us access to the user data fields that you allow in the next step)
 3. Use field display instead of ID for key names
 
 ### Add data fields
