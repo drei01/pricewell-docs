@@ -51,7 +51,8 @@ I﻿n the `<head>` tag of your page include the following snippet
 
 `﻿<script>window.pricewell.checkout(PRICING_PAGE_ID_HERE,null, email:"CUSTOMER_EMAIL_HERE", name: "CUSTOMER_NAME"});</script>`
 
-R﻿eplace the following
+R﻿eplace the following:
+
 - **PRICING_PAGE_ID_HERE** with your Pricing Page id (copied from PriceWell)
 -﻿ **CUSTOMER_EMAIL_HERE**, the email address of your customer
 -﻿ **CUSTOMER_NAME**, your customers name (optional)
