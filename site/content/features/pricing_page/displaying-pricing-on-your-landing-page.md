@@ -47,13 +47,9 @@ W﻿hen a customer lands in your application and registers an account, you have 
 2﻿. Send them directly to Stripe Checkout using the following snippet:
 
 I﻿n the `<head>` tag of your page include the following snippet
-`﻿``
-<script src="https://snippet.pricewell.io/checkout.js?mode=test" async="async">
-`﻿``
+`﻿<script src="https://snippet.pricewell.io/checkout.js?mode=test" async="async">`
 
-`﻿``
-<script>window.pricewell.checkout(PRICING_PAGE_ID_HERE,null, {email:"CUSTOMER_EMAIL_HERE", name: "CUSTOMER_NAME"});</script>
-`﻿``
+`﻿<script>window.pricewell.checkout(PRICING_PAGE_ID_HERE,null, email:"CUSTOMER_EMAIL_HERE", name: "CUSTOMER_NAME"});</script>`
 
 R﻿eplace the following
 - **PRICING_PAGE_ID_HERE** with your Pricing Page id (copied from PriceWell)
