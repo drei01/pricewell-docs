@@ -59,4 +59,5 @@ R﻿eplace the following
 - **PRICING_PAGE_ID_HERE** with your Pricing Page id (copied from PriceWell)
 -﻿ **CUSTOMER_EMAIL_HERE**, the email address of your customer
 -﻿ **CUSTOMER_NAME**, your customers name (optional)
+-﻿ **null** replace this with the Plan id if you included it in the button link (using `new URLSearchParams(window.location.search).get('plan')`).
 
