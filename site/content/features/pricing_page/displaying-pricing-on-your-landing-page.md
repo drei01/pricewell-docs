@@ -38,3 +38,25 @@ N﻿ote: `{{PLAN_ID}}` will be replaced automatically by PriceWell.
 If you are using the Bubble plugin, drag the **Pricing Table** component into your landing page, paste the Page Id as normal and add a **Custom Button Link**
 
 ![PriceWell Bubble plugin editor with custom button link filled in](/img/bubble-plugin-custom-link.png)
+
+## In your application
+
+W﻿hen a customer lands in your application and registers an account, you have two options:
+
+1﻿. Display the Pricing Table for them to choose a plan (remember to remove `data-button-link` from the snippet)
+2﻿. Send them directly to Stripe Checkout using the following snippet:
+
+I﻿n the `<head>` tag of your page include the following snippet
+`﻿``
+<script src="https://snippet.pricewell.io/checkout.js?mode=test" async="async">
+`﻿``
+
+`﻿``
+<script>window.pricewell.checkout(PRICING_PAGE_ID_HERE,null, {email:"CUSTOMER_EMAIL_HERE", name: "CUSTOMER_NAME"});</script>
+`﻿``
+
+R﻿eplace the following
+- **PRICING_PAGE_ID_HERE** with your Pricing Page id (copied from PriceWell)
+-﻿ **CUSTOMER_EMAIL_HERE**, the email address of your customer
+-﻿ **CUSTOMER_NAME**, your customers name (optional)
+
