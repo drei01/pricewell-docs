@@ -12,7 +12,7 @@ In this article, we'll show you how to re-use your PriceWell pricing table to di
 
 ## Pricing on the landing page
 
-I﻿t's common for SaaS products to display their pricing on the landing page. They do this so potential customers can decide upfront whether the app is right for them and whether there's a pricing tier that fits their needs.
+It's common for SaaS products to display their pricing on the landing page. They do this so potential customers can decide upfront whether the app is right for them and whether there's a pricing tier that fits their needs.
 
 ![Zendesk landing page displaying their pricing table](/img/zendesk-pricing.png)
 
@@ -28,10 +28,10 @@ If you are using the code snippet, simply add 
 ```data-button-link="https://app.mysaas.com/register"```
 to your code snippet. And **all** buttons on your pricing page will link to your chosen page (i.e. your registration page).
 
-I﻿f you want to know which product was clicked on you can add a parameter to the link
+If you want to know which product was clicked on you can add a parameter to the link
 ```data-button-link="https://app.mysaas.com/register?plan={{PLAN_ID}}"```
 
-N﻿ote: `{{PLAN_ID}}` will be replaced automatically by PriceWell.
+Note: `{{PLAN_ID}}` will be replaced automatically by PriceWell.
 
 ### Using the Bubble Plugin
 
@@ -41,20 +41,19 @@ If you are using the Bubble plugin, drag the **Pricing Table** component into 
 
 ## In your application
 
-W﻿hen a customer lands in your application and registers an account, you have two options:
+When a customer lands in your application and registers an account, you have two options:
 
-1﻿. Display the Pricing Table for them to choose a plan (remember to remove `data-button-link` from the snippet)
-2﻿. Send them directly to Stripe Checkout using the following snippet:
+1. Display the Pricing Table for them to choose a plan (remember to remove `data-button-link` from the snippet)
+2. Send them directly to Stripe Checkout using the following snippet:
 
-I﻿n the `<head>` tag of your page include the following snippet
-`﻿<script src="https://snippet.pricewell.io/checkout.js?mode=test" async="async">`
+In the `<head>` tag of your page include the following snippet
+`<script src="https://snippet.pricewell.io/checkout.js?mode=test" async="async">`
 
-`﻿<script>window.pricewell.checkout(PRICING_PAGE_ID_HERE,null, email:"CUSTOMER_EMAIL_HERE", name: "CUSTOMER_NAME"});</script>`
+`<script>window.pricewell.checkout(PRICING_PAGE_ID_HERE,null, email:"CUSTOMER_EMAIL_HERE", name: "CUSTOMER_NAME"});</script>`
 
-R﻿eplace the following:
+Replace the following:
 
 - **PRICING_PAGE_ID_HERE** with your Pricing Page id (copied from PriceWell)
--﻿ **CUSTOMER_EMAIL_HERE**, the email address of your customer
--﻿ **CUSTOMER_NAME**, your customers name (optional)
--﻿ **null** replace this with the Plan id if you included it in the button link (using `new URLSearchParams(window.location.search).get('plan')`).
-
+- **CUSTOMER_EMAIL_HERE**, the email address of your customer
+- **CUSTOMER_NAME**, your customers name (optional)
+- **null** replace this with the Plan id if you included it in the button link (using `new URLSearchParams(window.location.search).get('plan')`).
