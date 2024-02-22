@@ -24,7 +24,14 @@ Using PriceWell's Pricing Table feature you can configure your pricing in a sing
 
 ### Using the code snippet
 
-If you are using the code snippet, simply add `data-button-link="YOUR_LINK_HERE"` to your code snippet. And **all** buttons on your pricing page will link to your chosen page (i.e. your registration page).
+If you are using the code snippet, simply add 
+```data-button-link="https://app.mysaas.com/register"```
+to your code snippet. And **all** buttons on your pricing page will link to your chosen page (i.e. your registration page).
+
+I﻿f you want to know which product was clicked on you can add a parameter to the link
+```data-button-link="https://app.mysaas.com/register?plan={{PLAN_ID}}"```
+
+N﻿ote: `{{PLAN_ID}}` will be replaced automatically by PriceWell.
 
 ### Using the Bubble Plugin
 
