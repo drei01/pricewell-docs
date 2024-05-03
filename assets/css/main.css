@@ -5,3 +5,18 @@
 .DocSearch-Button {
     @apply w-full;
 }
+
+.prose code:not([data-lang]) {
+    color: #d14;
+    font-weight: 400;
+    @apply bg-gray-200;
+}
+
+code::before {
+    content: "" !important;
+    padding-left: 0.25rem;
+}
+code::after {
+    content: "" !important;
+    padding-right: 0.25rem;
+}
