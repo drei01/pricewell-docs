@@ -67,6 +67,9 @@ Go to Settings -> API
 2. Check "User" (this gives us access to the user data fields that you allow in the next step)
 3. Use field display instead of ID for key names
 
+| ⚠️  Be sure to check `Use field display instead of ID for key names` |
+| -------------------------------------------------------------------- |
+
 ### Add data fields
 
 In your Bubble App go to Data -> Data types -> User
@@ -88,16 +91,7 @@ Create the following new fields on the User data type:
 
 ### Syncing Custom Fields (optional)
 
-T﻿he fields above are required for the integration to work. You can also sync any additional fields you require (e.g. subscription quantity) by clicking "Add Custom Field".
-
-### Allow Access via API
-
-Now go to Data -> Privacy. Select the User type. There should be a privacy rule for "Everyone else". Select "Modify via API". **Make sure all other checkboxes are unchecked so as not to expose sensitive data.**
-
-![Make data visible by the Bubble.io API](/img/bubble-privacy-rules-2.png)
-
-| ⚠️  Be sure to check `Use field display instead of ID for key names` |
-| -------------------------------------------------------------------- |
+The fields above are required for the integration to work. You can also sync any additional fields you require (e.g. subscription quantity) by clicking "Add Custom Field".
 
 Now go to Settings -> API -> Generate new API token. *Copy the API token*
 
