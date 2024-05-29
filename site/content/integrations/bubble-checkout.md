@@ -54,20 +54,6 @@ In your Bubble App go to Data -> Data types -> User
 
 Create the following new fields on the User data type:
 
-### Allow Access via API using Privacy Rules
-
-![Bubble create data privacy rules](/img/bubble-checkout-privacy.png)
-
-Now go to Data -> Privacy -> StripeCheckouts
-
-* Define new rule (name: "Current user")
-* When: "This StripeCheckouts's email is Current User's email"
-* Leave the checkboxes as default (you can uncheck them to prevent the current user viewing this data)
-
-You should now have another rule called "Everyone else (default permissions)".
-
-* Enable "Create via API" for the "Everyone else" rule
-
 ### Create an API Token
 
 Now go to Settings -> API -> Generate new API token. *Copy the API token*
