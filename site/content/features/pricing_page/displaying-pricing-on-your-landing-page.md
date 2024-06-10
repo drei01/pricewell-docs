@@ -28,7 +28,9 @@ If you are using the code snippet, simply add 
 ```data-button-link="https://app.mysaas.com/register"```
 to your code snippet. And **all** buttons on your pricing page will link to your chosen page (i.e. your registration page).
 
-If you want to know which product was clicked on you can add a parameter to the link
+I﻿f you want the link to **open in a new window** add `data-button-options="{openInNewTab:true}"` to your snippet.
+
+If you want to know which product was clicked on you can add a parameter to the snippet
 ```data-button-link="https://app.mysaas.com/register?plan={{PLAN_ID}}"```
 
 Note: `{{PLAN_ID}}` will be replaced automatically by PriceWell.
