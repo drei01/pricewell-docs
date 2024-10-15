@@ -16,6 +16,5 @@ Y﻿ou can enable caching using the `data-cache="true"` attribute.
 
 S﻿imply add the attribute to your snippet like so:
 
-`﻿``html
-&lt;div id=&quot;pricewell-5ff26e79-7c40-40f6-8cfc-5e5d037c82ca&quot; data-cache=&quot;true&quot;&gt;&lt;/div&gt;&lt;script src=&quot;https://snippet.pricewell.io/5ff26e79-7c40-40f6-8cfc-5e5d037c82ca/pricewell.js&quot; async=&quot;&quot;&gt;&lt;/script&gt;
-`﻿``
+`﻿<div id="pricewell-5ff26e79-7c40-40f6-8cfc-5e5d037c82ca" data-cache="true"></div><script src="https://snippet.pricewell.io/5ff26e79-7c40-40f6-8cfc-5e5d037c82ca/pricewell.js" async=""></script>`
+
