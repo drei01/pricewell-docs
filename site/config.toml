@@ -14,11 +14,6 @@ googleAnalytics = "" # paste your analytics ID here. (Ex: UA-123-45)
 [markup.goldmark.renderer]
 unsafe = true
 
-[algolia]
-index = "pricewell-docs"
-key = "***REMOVED***"
-appID = "19UQLY9O07"
-
 
 ############################# Default Parameters ##########################
 [params]

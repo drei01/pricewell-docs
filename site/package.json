@@ -4,9 +4,7 @@
   "description": "<h1 align=center>Dot Hugo | <a target=\"_blank\" href=\"https://demo.gethugothemes.com/dot\" rel=\"nofollow\">Demo</a> | <a  target=\"_blank\" href=\"https://lighthouse-dot-webdotdevsite.appspot.com//lh/html?url=https%3A%2F%2Fdemo.gethugothemes.com%2Fdot%2F\">Page Speed (81%)</a></h1>",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "index-search-local": "hugo-algolia --config config.toml",
-    "index-search-deploy": "hugo-algolia --all -s -i \"content/**\""
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
