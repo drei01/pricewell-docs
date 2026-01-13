@@ -27,7 +27,7 @@ Super.so is an application, which allows you to combine your Notion pages, and a
 
 ### Stripe Integration     
 
-After entering in the [Super.so](http://super.so/) landing page, clicking the [Templates](https://super.so/market) option, will redirect you to the page where you can select the template you are going to use to build your website.  Among the templates, there’s the landing page option. By clicking it, you will be able to see a preview of your landing page.   
+After entering in the [Super.so](http://super.so/) landing page, clicking the [Templates](https://super.so/templates) option, will redirect you to the page where you can select the template you are going to use to build your website.  Among the templates, there’s the landing page option. By clicking it, you will be able to see a preview of your landing page.   
 
 [![](https://s3-eu-central-1.amazonaws.com/euc-cdn.freshdesk.com/data/helpdesk/attachments/production/80026136853/original/jc492g6lOJyLawtmA5y030Tp262oTHTLoA.png?1627292655)](https://s3-eu-central-1.amazonaws.com/euc-cdn.freshdesk.com/data/helpdesk/attachments/production/80026136853/original/jc492g6lOJyLawtmA5y030Tp262oTHTLoA.png?1627292655)
 
