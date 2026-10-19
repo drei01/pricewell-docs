@@ -9,7 +9,8 @@ const purgecss = require('@fullhuman/postcss-purgecss')({
 module.exports = {
     plugins: [
         require('tailwindcss')('./tailwind.config.js'),
-        require('autoprefixer')(),
+        // No custom usage statistics; avoid Browserslist searching parent directories.
+        require('autoprefixer')({ stats: {} }),
         ...(process.env.HUGO_ENVIRONMENT === 'production' ? [purgecss] : []),
     ],
 };

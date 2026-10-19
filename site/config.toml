@@ -10,6 +10,11 @@ title = "PriceWell Help Center"
 disableLanguages = []
 # google analytics
 googleAnalytics = "" # paste your analytics ID here. (Ex: UA-123-45)
+
+# Tailwind scans the theme's templates in the parent directory.
+[security.node.permissions]
+allowRead = ['../']
+
 # unsafe html
 [markup.goldmark.renderer]
 unsafe = true
